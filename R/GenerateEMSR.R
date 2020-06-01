@@ -1,0 +1,307 @@
+# Emperical Markers of Sensitivity and resistantce
+#' @name GenerateEMSR
+#' @export GenerateEMSR
+#' @title Emperical Markers of Sensitivity and resistance
+#' @param df_input input data with cell lines as colnames and varaibles as rownames defaults to our dataset
+#' @param df_response response values dataframe with colnames as cell lines and drugs as column. defaults to our dataset
+#' @param drug drug generate markers for
+#' @param computational_load decimal fraction of cores you want to use. If left as NULL only 1 core will be used.
+
+GenerateEMSR <- function(df_input= NULL,
+                         df_response = NULL,
+                         drug = "barasertib",
+                         resampling.times= 10,
+                         p.cutoff= 0.05,
+                         direction_percentage = 0.8,
+                         fold.cut.off=0.8,
+                         marker.n.cutoff = 0.3,
+                         save_xlsx = F,
+                         save_name = NULL,
+                         computational_load = NULL,
+                         pfilt = T){
+
+  #Ensure relevent libraries are in the environment
+  if("dplyr" %in% (.packages())==FALSE){library(dplyr)}
+  if("limma" %in% (.packages())==FALSE){library(dplyr)}
+  if("foreach" %in% (.packages())==FALSE){library(foreach)}
+  if("doParallel" %in% (.packages())==FALSE){library(doParallel)}
+
+
+
+  #drug = "ABT.737"
+  #df_input = DRUMLR:::PDBphos[,input_info$cell_names]
+  #df_response =sensitivity_database[input_info$cell_names,]
+  #resampling.times = 10
+  #p.cutoff = 0.05
+  #fold.cut.off = 0.8
+  #marker.n.cutoff = 0.5
+  #direction_percentage = 0.6
+  #computational_load = NULL
+  #pfilt = T
+
+
+
+
+
+
+  if(is.null(computational_load)==F){
+  #active relevent cores
+  cores <- round((computational_load * parallel::detectCores()), 0)
+  registerDoParallel(cores = cores)
+  print(paste("running on", cores, "cores"))
+  }
+
+  #test variables
+  if(is.null(df_input)){df_input <- DRUMLR:::PDBphos}
+  if(is.null(df_response)){df_response <- DRUMLR:::PDBaac}
+
+  #Split Cell lines into resistant and sensitive groups
+  df_response <- df_response[,drug, drop = F] %>% na.omit()
+  median_filter <- df_response[,drug] >= median(df_response[,drug], na.rm = T)
+  sensitive_cells <- rownames(df_response)[median_filter] %>% toupper()
+  resistant_cells <- rownames(df_response)[!median_filter] %>% toupper()
+  df_sens <- df_input[,colnames(df_input) %in% sensitive_cells]
+  df_res <- df_input[,colnames(df_input) %in% resistant_cells]
+
+  print("Cells split into sensitive and resistant groups")
+
+  # split sensitive and resistant cells into k*rs groups
+
+  fm.up <- caret::createMultiFolds(colnames(df_sens),k=2,times = resampling.times)
+  fm.do <- caret::createMultiFolds(colnames(df_res),k=2,times = resampling.times)
+  grid <- expand.grid(1:length(fm.up), 1:length(fm.up))
+
+
+  #foreach loop across grid expansion of multifolds list will iterate across all combinations
+  print(paste(Sys.time(), ":Initiating", drug, "EMSR analysis at :"))
+  startt <- Sys.time()
+
+ if(is.null(computational_load)){
+   EMSR_analysis <-  foreach::foreach(i = rownames(grid),
+                                      .inorder = T,
+                                      .packages = c("limma", "dplyr"),
+                                      .combine = "cbind")%do%{
+
+                                        #get sensitivity and resistance inputs from folds
+                                        sensitive_cells <- colnames(df_sens)[fm.up[grid[i, "Var1"]][[1]]]
+                                        resistant_cells <- colnames(df_res)[fm.do[grid[i, "Var2"]][[1]]]
+
+                                        df1 <- df_sens[,sensitive_cells, drop= F]
+                                        df2 <- df_res[,resistant_cells, drop= F]
+
+                                        if(ncol(df1) <=3|ncol(df2)<=3){
+                                          print(paste(i, "not enough n values"))
+
+                                          out <- data.frame("folds" = rep(0,each = nrow(df1)),
+                                                            "pvalue" = rep(1,each = nrow(df2)))
+
+                                          rownames(out)<- rownames(df1)
+
+                                          colnames(out) <- paste(i,c("folds","pvalue"), sep = ".")
+
+                                        }else if(t.test(df_response[sensitive_cells,],df_response[resistant_cells,])$p.value >0.05){
+                                          out <- data.frame("folds" = rep(0,each = nrow(df1)),
+                                                            "pvalue" = rep(1,each = nrow(df2)))
+                                          print(paste(i, "no significant difference between groups"))
+
+                                          rownames(out)<- rownames(df1)
+
+                                          colnames(out) <- paste(i,c("folds","pvalue"), sep = ".")
+
+                                        }else{
+
+                                        sens_cellname_fold<-colnames(df1)
+                                        res_cellname_fold<-colnames(df2)
+
+                                        dfall <- cbind(df1, df2)
+
+                                        sensitivity <- c(2,1)[as.factor(unclass(colnames(dfall) %in% sens_cellname_fold))]
+                                        #df1 <- data.frame(sensitivity = as.factor(1), df1)
+                                        #df2 <- data.frame(sensitivity = as.factor(2), df2)
+
+                                        sens_cellname_fold<-sens_cellname_fold %>% paste(collapse = ";")
+                                        res_cellname_fold<-res_cellname_fold %>% paste(collapse = ";")
+
+                                        design <- stats::model.matrix(~ 0+factor(c(sensitivity)))
+                                        colnames(design) <- c("sensitive","resistant")
+                                        contrast.matrix <- limma::makeContrasts(sensitive-resistant,
+                                                                                levels=design)
+
+                                        fit <- limma::lmFit(dfall,design)
+                                        fit2 <- limma::contrasts.fit(fit, contrast.matrix)
+                                        fit2 <- limma::eBayes(fit2)
+                                        pvals <- data.frame(fit2$p.value)
+                                        fvals <- data.frame(fit2$coefficients)
+
+                                        out <- cbind(pvals, fvals)
+                                        colnames(out)<- paste(i,c("pvalue","folds"), sep = ".")
+                                        }
+                                        print(paste(i, "completed"))
+                                        return(out)
+                                      }
+
+ }else{
+   EMSR_analysis <-  foreach::foreach(i = rownames(grid),
+                                      .inorder = T,
+                                      .packages = c("limma", "dplyr"),
+                                      .combine = "cbind")%dopar%{
+
+                                        #get sensitivity and resistance inputs from folds
+                                        sensitive_cells <- colnames(df_sens)[fm.up[grid[i, "Var1"]][[1]]]
+                                        resistant_cells <- colnames(df_res)[fm.do[grid[i, "Var2"]][[1]]]
+
+                                        df1 <- df_sens[,sensitive_cells, drop = F]
+                                        df2 <- df_res[,resistant_cells, drop = F]
+
+                                        if(ncol(df1) <=3|ncol(df2)<=3){
+
+                                          out <- data.frame("folds" = rep(0,each = nrow(df1)),
+                                                            "pvalue" = rep(1,each = nrow(df2)))
+
+                                          rownames(out)<- rownames(df1)
+
+                                          colnames(out) <- paste(i,c("folds","pvalue"), sep = ".")
+
+                                        }else if(t.test(df_response[sensitive_cells,],df_response[resistant_cells,])$p.value >0.05){
+
+                                          out <- data.frame("folds" = rep(0,each = nrow(df1)),
+                                                            "pvalue" = rep(1,each = nrow(df2)))
+
+                                          rownames(out)<- rownames(df1)
+                                          colnames(out) <- paste(i,c("folds","pvalue"), sep = ".")
+
+                                        }else{
+
+                                        sens_cellname_fold<-colnames(df1)
+                                        res_cellname_fold<-colnames(df2)
+
+                                        dfall <- cbind(df1, df2)
+
+                                        sensitivity <- c(2,1)[as.factor(unclass(colnames(dfall) %in% sens_cellname_fold))]
+                                        #df1 <- data.frame(sensitivity = as.factor(1), df1)
+                                        #df2 <- data.frame(sensitivity = as.factor(2), df2)
+
+                                        sens_cellname_fold<-sens_cellname_fold %>% paste(collapse = ";")
+                                        res_cellname_fold<-res_cellname_fold %>% paste(collapse = ";")
+
+                                        design <- stats::model.matrix(~ 0+factor(c(sensitivity)))
+                                        colnames(design) <- c("sensitive","resistant")
+                                        contrast.matrix <- limma::makeContrasts(sensitive-resistant,
+                                                                                levels=design)
+
+                                        fit <- limma::lmFit(dfall,design)
+                                        fit2 <- limma::contrasts.fit(fit, contrast.matrix)
+                                        fit2 <- limma::eBayes(fit2)
+                                        pvals <- data.frame(fit2$p.value)
+                                        fvals <- data.frame(fit2$coefficients)
+
+                                        out <- cbind(pvals, fvals)
+                                        colnames(out)<- paste(i,c("pvalue","folds"), sep = ".")
+                                        }
+                                        return(out)
+                                      }
+
+  }
+
+  print(paste(Sys.time(), ":Processing EMSR results"))
+
+
+
+  #split data into fold and pvalue data
+  EMSR_analysis <- list("df_folds" = data.frame(EMSR_analysis[,grepl(".folds", colnames(EMSR_analysis), fixed = T)]),
+                        "df_pvalues" = data.frame(EMSR_analysis[,grepl(".pvalue", colnames(EMSR_analysis), fixed = T)]))
+
+
+  #get information for cell lines comprising each iteration and iteration sequence
+  fold_groups <- list("sensitive" = lapply(fm.up, FUN = function(x){colnames(df_sens)[x]%>% paste(collapse = ";")}) %>% unlist() %>% data.frame(),
+                      "resistant" = lapply(fm.do, FUN = function(x){colnames(df_res)[x]%>% paste(collapse = ";")}) %>% unlist() %>%data.frame())
+  fold_groups <- merge.data.frame(fold_groups$sensitive, fold_groups$resistant, by = "row.names", all = T)
+  fold_groups <- data.frame(rownames(fold_groups), fold_groups)
+  colnames(fold_groups) <- c("fold_group_number", "repeat", "sensitive", "resistant")
+
+  grid <- data.frame(rownames(grid), data.frame(grid))
+  colnames(grid)<- c("repeat", "fold_group_number_sensitive", "fold_group_number_resistant")
+
+
+  #count number of iterations which satisfied pvalue and fold thresholds
+  ###############################################################################################################
+  #binary analysis of folds and pvalue
+
+  #label significant fold values
+  df_up <- EMSR_analysis$df_folds
+  df_up[df_up<=fold.cut.off&df_up>=-(fold.cut.off)] <- 0
+  df_up[df_up>=fold.cut.off] <- 2
+  df_up[df_up<=-(fold.cut.off)] <- 1
+
+  #label significant pvalues
+  df_p <- EMSR_analysis$df_pvalues
+  df_p[df_p <= p.cutoff] <- -1
+  df_p[EMSR_analysis$df_pvalues > p.cutoff] <- 0
+
+  #combine significance
+  df_sig <- df_up*df_p
+
+  df.summary <- data.frame( "Variable" = rownames(EMSR_analysis$df_folds),
+                            "n_pvalue_0.01" =  apply(EMSR_analysis$df_pvalues,1, function(x) sum (x<=0.1)),
+                            "n_pvalue_0.05" = apply(EMSR_analysis$df_pvalues,1, function(x) sum (x<=0.05)),
+                            "n_pvalue_cutoff" =  apply(df_p,1, function(x) sum (x==(-1))),
+                            "n_increase" =  apply(df_up,1, function(x) sum (x==2)),
+                            "n_decrease" = apply(df_up,1, function(x) sum (x==1)),
+                            "n_increase_pfilt" = apply(df_sig,1, function(x) sum (x==(-2))),
+                            "n_decrease_pfilt" = apply(df_sig,1, function(x) sum (x==(-1)))
+
+  )
+
+   df.summary$total <- (df.summary$n_increase + df.summary$n_decrease)
+   df.summary$total_pfilt <- (df.summary$n_increase_pfilt + df.summary$n_decrease_pfilt)
+
+
+ #Filter all markers based on the marker.n.cutoff value
+  reps_threshold <- nrow(grid)*marker.n.cutoff
+  sig_sensitive <- df.summary[df.summary$n_pvalue_cutoff>= reps_threshold& df.summary$n_increase/df.summary$total >= direction_percentage, "Variable"]
+  sig_resistant <- df.summary[df.summary$n_pvalue_cutoff>= reps_threshold& df.summary$n_decrease/df.summary$total >= direction_percentage, "Variable"]
+
+  sig_sensitive_pfilt <- df.summary[df.summary$n_pvalue_cutoff>= reps_threshold& df.summary$n_increase_pfilt/df.summary$total_pfilt >= direction_percentage, "Variable"]
+  sig_resistant_pfilt <- df.summary[df.summary$n_pvalue_cutoff>= reps_threshold& df.summary$n_decrease_pfilt/df.summary$total_pfilt >= direction_percentage, "Variable"]
+
+  markers <- data.frame("drug" = drug, "m_sens" = length(sig_sensitive), "sensitive_markers" = sig_sensitive%>% paste(collapse = "-"),"m_res" = length(sig_resistant), "resistant_markers" = sig_resistant%>% paste(collapse = "_"))
+
+  markers_pfilt <- data.frame("drug" = drug, "m_sens" = length(sig_sensitive_pfilt), "sensitive_markers" = sig_sensitive_pfilt%>% paste(collapse = "-"),"m_res" = length(sig_resistant_pfilt), "resistant_markers" = sig_resistant_pfilt%>% paste(collapse = "_"))
+
+  #Filter all markers using pvalue filtered fold changes
+  #############################################################################
+  #compile and name output list
+
+  if(pfilt == T){out<- list(out, data.frame(markers_pfilt))
+  out <- list(markers, markers_pfilt, fold_groups, grid, EMSR_analysis$df_folds, EMSR_analysis$df_pvalues, df.summary)
+  names(out) <- c("markers", "markers_pfilt", "fold_groups", "fold_order", "limma_folds", "limma_pvalues", "Summary")
+  }else{
+  out <- list(markers, fold_groups, grid, EMSR_analysis$df_folds, EMSR_analysis$df_pvalues, df.summary)
+  names(out) <- c("markers", "fold_groups", "fold_order", "limma_folds", "limma_pvalues", "Summary")
+  }
+  print(paste(Sys.time(), ":Analysis Complete in ", (Sys.time() - startt)))
+
+    #save data as xlsx
+  if(save_xlsx == T){
+    print("saving xlsx")
+    if(is.null(save_name) == T){
+      save_name <- paste(drug,"_Markers",
+                         #gsub("-","_",Sys.Date()),
+                         ".xlsx", sep = "")
+    }else{
+      save_name <- paste(save_name, "xlsx", sep = ".")
+    }
+
+    if(file.exists(save_name)==T){
+      repeat{save_name <- paste(gsub(".xlsx","", save_name), "updated.xlsx", sep = "_")
+      if(file.exists(save_name)==F){break}
+      }
+    }
+    henryspackage::ListToExcel(out, paste(save_name, sep = ""))
+    print(paste("Results exported to:", paste(save_name, sep = "")))
+  }
+  return(out)
+  if(is.null(computational_load)==F){
+  doParallel::stopImplicitCluster()
+  }
+}
