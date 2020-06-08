@@ -1,0 +1,24 @@
+{
+    "id": "CF591E92",
+    "path": "~/GitHub/DRUMLR/R/GenerateEMSR.R",
+    "project_path": "R/GenerateEMSR.R",
+    "type": "r_source",
+    "hash": "3027625868",
+    "contents": "",
+    "dirty": false,
+    "created": 1591636582861.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "cursorPosition": "12,42",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1591623546,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1591623546,
+    "read_only": false,
+    "read_only_alternatives": []
+}

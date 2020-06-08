@@ -1,0 +1,573 @@
+﻿X,...1.y,targets,target.id,target.class,drug_id,Name,Synonyms,Targets,Target.pathway,Targets2,PubCHEM,Sample.Size,Count,X,X.1,development
+Axitinib,114,Vascular endothelial growth factor receptor 2,P35968,Kinase,1021,Axitinib,"AG-13736, Inlyta","PDGFR, KIT, VEGFR",RTK signaling,"PDGFR, KIT, VEGFR",6450551,GDSC2,50,SANGER,495,approved
+azacitidine,1,DNMT1;DNA (cytosine-5)-methyltransferase,P26358,Methyltransferase superfamily,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+belinostat,135,HDAC,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+bendamustine,2,Human DNA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Bexarotene,137,Retinoic acid receptor RXR-alpha,P19793,Zinc-finger,186,Bexarotene,"LG-100069, Targretin, Targret, Targrexin, Targretyn, Bexarotenum",Retinioic X receptor (RXR) agonist,Other,Retinioic X receptor (RXR) agonist,82146,GDSC1,870,MGH,495,approved
+Bicalutamide,142,Androgen receptor,P10275,Zinc-finger,1502,Bicalutamide,"ICI-176334, Casodex, Cosudex, ICI 176334",AR,Hormone-related,AR,2375,GDSC1,877,SANGER,495,approved
+Bleomycin,149,DNA,P0AEB2,NA,1378,Bleomycin (50 uM),NA,dsDNA break induction,DNA replication,dsDNA break induction,5460769,GDSC1,935,SANGER,495,approved
+Bortezomib,157,Proteasome,NA,NA,1191,Bortezomib,"PS-341, LDP-341, Velcade",Proteasome,Protein stability and degradation,Proteasome,387447,GDSC2,757,SANGER,495,approved
+Bosutinib,158,Proto-oncogene tyrosine-protein kinase SRC;Proto-oncogene c-Abl,P12931;P00519,Kinase,1019,Bosutinib,"SKI-606, Bosulif","SRC, ABL, TEC","Other, kinases","SRC, ABL, TEC",5328940,GDSC1,948,SANGER,495,approved
+cabozantinib,166,Vascular endothelial growth factor receptor 2;Hepatocyte growth factor receptor,P35968;P08581,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Carboplatin,3,Tubulin beta-1 chain;Human DNA,Q9H4B7,Tubulin family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+chlorambucil,12,DNA,P0AEB2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Cisplatin,16,mRNA of Telomerase reverse transcriptase;Human DNA,O14746,Kinase,1005,Cisplatin,"cis-Diammineplatinum(II) dichloride, Platinol, CIS-DDP",DNA crosslinker,DNA replication,DNA crosslinker,84691,GDSC2,769,SANGER,495,approved
+clofarabine,17,DNA;Ribonucleoside-diphosphate reductase;DNA synthesis,P0AEB2;P08543,Oxidoreductases acting on CH or CH(2) groups,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Crizotinib,210,Hepatocyte growth factor receptor;ALK tyrosine kinase receptor;ROS1,P08581;Q9UM73;P08922,Kinase,1083,Crizotinib,"Xalkori, PF2341066, PF-2341066, PF 2341066","MET, ALK, ROS1",RTK signaling,"MET, ALK, ROS1",11626560,GDSC2,738,SANGER,495,approved
+Cyclophosphamide,18,Human DNA,NA,NA,1512,Cyclophosphamide,"Cytoxan, Neosar, Cyclophosphamid, Procytox, Cyclophosphane",Alkylating agent,DNA replication,Alkylating agent,2907,GDSC2,752,SANGER,495,approved
+Cytarabine,19,DNA polymerase;mRNA of bcl2,P04293,DNA polymerase type-B family,1006,Cytarabine,"Ara-Cytidine, Arabinosyl Cytosine, U-19920",Antimetabolite,Other,Antimetabolite,6253,GDSC2,753,SANGER,495,approved
+dabrafenib,219,BRAF,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+dacarbazine,20,DNA;mRNA of bcl2,P0AEB2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Dasatinib,221,Proto-oncogene tyrosine-protein kinase SRC;Fyn tyrosine kinase;Lck tyrosine kinase;Proto-oncogene c-Abl,P12931;P06241;P06239;P00519,Kinase,1079,Dasatinib,"BMS-354825-03, BMS-354825, Sprycel","ABL, SRC, Ephrins, PDGFR, KIT","Other, kinases","ABL, SRC, Ephrins, PDGFR, KIT",3062316,GDSC2,761,SANGER,495,approved
+dexamethasone,225,Glucocorticoid receptor;Steroid hormone receptor ERR1;DNA topoisomerase II;mRNA of bcl2,P04150;P11474,Zinc-finger,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Docetaxel,228,Tubulin,Q13509,Tubulin family,1819,Docetaxel,"RP-56976, Taxotere",Microtubule stabiliser,Mitosis,Microtubule stabiliser,NA,GDSC2,679,SANGER,495,approved
+Doxorubicin,22,Estrogen receptor;Estrogen receptor beta;Legumain;DNA topoisomerase II;Human DNA,P03372;Q92731;Q99538,Zinc-finger,133,Doxorubicin,"Doxil, Rubex, Adriamycin, Adriablastin, Doxorubicine",Anthracycline,DNA replication,Anthracycline,31703,GDSC1,878,MGH,495,approved
+Erlotinib,241,Epidermal growth factor receptor;Vascular endothelial growth factor A,P00533;P15692,Kinase,1168,Erlotinib,"Tarceva, RG-1415, CP-358774, OSI-774, Ro-508231, R-1415",EGFR,EGFR signaling,EGFR,176870,GDSC2,753,SANGER,495,approved
+fingolimod,26,Sphingosine 1-phosphate receptor 1,P21453,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+fulvestrant,259,Estrogen receptor,P03372,Zinc-finger,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Gefitinib,265,Epidermal growth factor receptor,P00533,Kinase,1010,Gefitinib,"ZD-1839, Iressa",EGFR,EGFR signaling,EGFR,123631,GDSC2,753,SANGER,495,approved
+Gemcitabine,28,Ribonucleoside-diphosphatereductase subunit M2;Human DNA,P31350,Oxidoreductases acting on CH or CH(2) groups,1190,Gemcitabine,"Gemzar, LY-188011",Pyrimidine antimetabolite,DNA replication,Pyrimidine antimetabolite,60750,GDSC2,757,SANGER,495,approved
+ibrutinib,305,Tyrosine-protein kinase BTK,Q06187,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+ifosfamide,32,DNMT1;Human DNA,P26358,Methyltransferase superfamily,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Imatinib,33,Proto-oncogene c-Abl;Mast/stem cell growth factor receptor;Platelet-derived growth factor receptor;mRNA of MCL-1,P00519;P10721,Kinase,34,Imatinib,"Gleevec, STI-571","ABL, KIT, PDGFR","Other, kinases","ABL, KIT, PDGFR",5291,GDSC1,408,MGH,495,approved
+Irinotecan,34,DNA topoisomerase I;Toposisomerase-1;mRNA of bcl2,Q969P6;P11387,DNA topoisomerase,1088,Irinotecan,"Camptosar, (+)-Irinotecan, Irinotecanum, irinotecan hydrochloride",TOP1,DNA replication,TOP1,60838,GDSC2,802,SANGER,495,approved
+itraconazole,35,Fungal Cytochrome P450 51,P10613,Oxidoreductases acting on paired donors,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+lapatinib,36,Epidermal growth factor receptor;Receptor protein-tyrosine kinase erbB-2,P00533;P04626,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+lenalidomide,37,Tumor necrosis factor,P01375,Cytokine: tumor necrosis factor,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+lenvatinib,361,VEGFR,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+lovastatin,38,3-hydroxy-3-methylglutaryl-coenzyme A reductase,P04035,Short-chain dehydrogenases reductases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Methotrexate,40,MMP-9;72 kDa type IV collagenase;DHFR;Dihydrofolate reductase;Reduced folate transporter 1;Proton-coupled folate transporter,P14780;P08253;P00374;Q9HBH1;P41440;Q96NT5,Peptidase,1008,Methotrexate,"Abitrexate, Amethopterin, Rheumatrex, Trexall, Folex",Antimetabolite,DNA replication,Antimetabolite,126941,GDSC1,949,SANGER,495,approved
+Midostaurin,382,Protein kinase C gamma type;FL cytokine receptor;mRNA of MCL-1,P05129;P36888,Kinase,153,Midostaurin,"PKC412, benzoylstaurosporine, CGP-41251","PKC, PPK, FLT1, c-FGR, others",RTK signaling,"PKC, PPK, FLT1, c-FGR, others",several,GDSC1,889,MGH,495,approved
+nelarabine,420,DNA,P0AEB2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+neratinib,423,HER,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Nilotinib,425,Proto-oncogene c-Abl;mRNA of MCL-1,P00519,Kinase,1013,Nilotinib,"Tasigna, AMN 107",ABL,ABL signaling,ABL,644241,GDSC2,758,SANGER,495,approved
+nintedanib,44,Basic fibroblast growth factor receptor 1;Vascular endothelial growth factor receptor 1;Platelet-derived growth factor receptor;Triple angiokinase;Anti-fibrotic kinase,P11362;P17948,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+omacetaxine mepesuccinate,45,ribosome A site,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Oxaliplatin,454,Human DNA,NA,NA,1806,Oxaliplatin,NA,NA,DNA replication,NA,NA,GDSC2,729,SANGER,495,approved
+paclitaxel,47,Apoptosis regulator Bcl-2;Tubulin beta;mRNA of Heatshock 27 kDa protein;Tubulin beta-1 chain;mRNA of bcl2,P10415;P04792;Q9H4B7,Bcl-2 family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Panobinostat,459,Histone deacetylase 1,Q13547,Carbon-nitrogen hydrolase,438,Panobinostat,"Farydak, LBH589",HDAC,Chromatin histone acetylation,HDAC,NA,GDSC1,905,MGH,495,approved
+pazopanib,462,Epidermal growth factor receptor;Receptor protein-tyrosine kinase erbB-2;Vascular endothelial growth factor receptor 2;Mast/stem cell growth factor receptor;Platelet-derived growth factor receptor,P00533;P04626;P35968;P10721,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+procarbazine,49,DNA,P0AEB2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Rapamycin,518,Serine/threonine-protein kinase mTOR;Kappa-type opioid receptor;FK506-binding protein 1A,P42345;P41145;P62942,Kinase,1084,Rapamycin,"AY-22989, Sirolimus, WY-090217, Torisel, Rapamune",MTORC1,PI3K/MTOR signaling,MTOR,5384616,GDSC2,745,SANGER,495,approved
+regorafenib,520,Vascular endothelial growth factor receptor 2;Mast/stem cell growth factor receptor;Proto-oncogene tyrosine-protein kinase receptor ret,P35968;P10721;P07949,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+ruxolitinib,529,JAK1;Tyrosine-protein kinase JAK2,P23458;O60674,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+simvastatin,51,Peroxisome proliferator activated receptor gamma;3-hydroxy-3-methylglutaryl-coenzyme A reductase,P37231;P04035,Nuclear hormone receptor,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+SN-38,562,Toposisomerase-1,P11387,DNA topoisomerase,1494,SN-38,"7-Ethyl-10-Hydroxy-Camptothecin, SN 38",TOP1,DNA replication,TOP1,104842,GDSC1,954,SANGER,495,approved
+Sunitinib,578,Vascular endothelial growth factor receptor 2,P35968,Kinase,5,Sunitinib,"Sutent, Sunitinib Malate, SU-11248","PDGFR, KIT, VEGFR, FLT3, RET, CSF1R",RTK signaling,"PDGFR, KIT, VEGFR, FLT3, RET, CSF1R",5329102,GDSC1,399,MGH,495,approved
+tacrolimus,583,Calcineurin,Q08209,Phosphoric monoester hydrolases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Tamoxifen,52,Estrogen receptor;Estrogen receptor beta,P03372;Q92731,Zinc-finger,1199,Tamoxifen,"Nolvadex, Soltamox, Zynoplex, ICI-46474, Kessar",ESR1,Hormone-related,ESR1,2733526,GDSC2,757,SANGER,495,approved
+temozolomide,591,Human DNA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+temsirolimus,592,Serine/threonine-protein kinase mTOR,P42345,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Teniposide,54,DNA topoisomerase II,NA,ATP-hydrolyzing DNA topoisomerase,1809,Teniposide,Vumon,NA,DNA replication,NA,NA,GDSC2,729,SANGER,495,approved
+thalidomide,55,Progesterone receptor;Tumor necrosis factor;mRNA of bcl2,P06401;P01375,Zinc-finger,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Topotecan,605,DNA topoisomerase I,Q969P6,DNA topoisomerase,1808,Topotecan,NA,NA,DNA replication,NA,NA,GDSC2,729,SANGER,495,approved
+Vandetanib,60,Epidermal growth factor receptor;Vascular endothelial growth factor receptor 2;Proto-oncogene tyrosine-protein kinase receptor ret,P00533;P35968;P07949,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Vinblastine,61,Tubulin beta-2 chain,P68371,NA,1004,Vinblastine,Velban,Microtubule destabiliser,Mitosis,Microtubule destabiliser,6710780,GDSC2,752,SANGER,495,approved
+vincristine,62,Tubulin beta,NA,Tubulin family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,approved
+Vinorelbine,63,Tubulin beta;Tubulin,Q13509,Tubulin family,2048,Vinorelbine,"vinorelbine tartrate, Navelbine, Exelbine",Microtubule destabiliser,Mitosis,Microtubule destabiliser,5311497,GDSC2,751,SANGER,495,approved
+AR-42,101,Glucagon-like peptide 1 receptor;Glucagon receptor,P43220;P47871,GPCR secretin,272,AR-42,"HDAC-42, AR 42, AR42",HDAC1,Chromatin histone acetylation,HDAC1,6918848,GDSC1,906,MGH,495,phase 1
+AT-406,105,Multi-IAP,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+AT-7519,106,Cell division protein kinase 2,P24941,Kinase,219,AT-7519,AT7519,"CDK1, CDK2, CDK4, CDK6, CDK9",Cell cycle,"CDK1, CDK2, CDK4, CDK6, CDK9",11338033,GDSC1,908,MGH,495,phase 1
+AZD1480,120,Tyrosine-protein kinase JAK2,O60674,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+AZD6482,123,PI3K beta,P42338,Kinase,2169,AZD6482,"AZD 6482, AZD-6482, AK-55409",PI3Kbeta,PI3K/MTOR signaling,PI3K,44137675,GDSC2,48,SANGER,495,phase 1
+AZD7762,124,Serine/threonine-protein kinase Chk1,O14757,Kinase,1022,AZD7762,"AZD-7762, AZD 7762","CHEK1, CHEK2",Cell cycle,"CHEK1, CHEK2",11152667,GDSC2,765,SANGER,495,phase 1
+AZD8055,125,Serine/threonine-protein kinase mTOR,P42345,Kinase,1059,AZD8055,AZD-8055,"MTORC1, MTORC2",PI3K/MTOR signaling,MTOR,25262965,GDSC2,96,SANGER,495,phase 1
+Bryostatin 1,161,PKC,NA,NA,197,Bryostatin 1,Bryostatin,PKC,Other,PKC,5280757,GDSC1,875,MGH,495,phase 1
+CP724714,208,Receptor protein-tyrosine kinase erbB-2,P04626,Kinase,255,CP724714,CP-724714,ERBB2,RTK signaling,ERBB2,9874913,GDSC1,921,MGH,495,phase 1
+CUDC-101,213,Epidermal growth factor receptor;Receptor protein-tyrosine kinase erbB-2,P00533;P04626,Kinase,273,CUDC-101,CUDC 101,"HDAC1-10, EGFR, ERBB2",Other,"HDAC1-10, EGFR, ERBB2",24756910,GDSC1,900,MGH,495,phase 1
+GSK1070916,278,Aurora protein kinase;Aurora kinase B,Q9UQB9;Q96GD4,Kinase,226,GSK1070916,GSK-1070916,"AURKA, AURKC",Mitosis,"AURKA, AURKC",46885626,GDSC1,874,MGH,495,phase 1
+GSK2636771,284,PI3K beta,P42338,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+GSK690693,290,AKT3 protein kinase,Q9Y243,Kinase,326,GSK690693,"GSK 690693, GSK-690693",AKT,PI3K/MTOR signaling,AKT,16725726,GDSC1,917,MGH,495,phase 1
+KW-2449,354,Basic fibroblast growth factor receptor 1;Proto-oncogene c-Abl;FL cytokine receptor,P11362;P00519;P36888,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+OSI-930,452,Vascular endothelial growth factor receptor 2;Mast/stem cell growth factor receptor,P35968;P10721,Kinase,298,OSI-930,OSI 930 OSI930,KIT,RTK signaling,KIT,9868037,GDSC1,920,MGH,495,phase 1
+OSU-03012,453,PDPK,NA,NA,167,OSU-03012,"AR-12, OSU 03012, OSU03012, PDK1 inhibitor AR-12",PDK1 (PDPK1),Metabolism,PDK1 (PDPK1),10027278,GDSC1,878,MGH,495,phase 1
+pac-1,456,Vanilloid receptor 1;Prostaglandin G/H synthase 2,Q8NER1;P35354,Transient receptor family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+PF-562271,480,Focal adhesion kinase,Q05397,Kinase,158,PF-562271,PF-00562271,"FAK, FAK2",Cytoskeleton,"FAK, FAK2",11713159,GDSC1,872,MGH,495,phase 1
+PHA-793887,485,Cell division protein kinase 4;Cell division protein kinase 2;Cell division control protein 2 homolog,P11802;P24941;P06493,Kinase,301,PHA-793887,"PHA793887, PHA 793887","CDK2, CDK7, CDK5",Cell cycle,"CDK2, CDK7, CDK5",46191454,GDSC1,919,MGH,495,phase 1
+serdemetan,546,HDM,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+SGX-523,549,Hepatocyte growth factor receptor,P08581,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+tamatinib,587,Tyrosine-protein kinase SYK;Proto-oncogene tyrosine-protein kinase receptor ret,P43405;P07949,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 1
+ZSTK474,659,Phosphoinositide 3 kinase,P48736,Kinase,223,ZSTK474,"KIN001-167, ZSTK-474, ZSTK 474",PI3K (class 1),PI3K/MTOR signaling,PI3K,11647372,GDSC1,918,MGH,495,phase 1
+alvocidib,96,CDK,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+AZD4547,121,Basic fibroblast growth factor receptor 1,P11362,Kinase,1786,AZD4547,1035270-39-3,"FGFR1, FGFR2, FGFR3",RTK signaling,"FGFR1, FGFR2, FGFR3",51039095,GDSC2,758,SANGER,495,phase 2
+birinapant,145,Inhibitor of apoptosis protein 2;X-linked inhibitor of apoptosis protein,Q13490;P98170,Carbon-nitrogen ligase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+BMS-754807,156,RAC serine/threonine-protein kinase,P31749,Kinase,2171,BMS-754807,BMS-754807,"IGF1R, IR",IGF1R signaling,"IGF1R, IR",NA,GDSC2,46,SANGER,495,phase 2
+foretinib,252,MET,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+KX2-391,355,Tubulin polymerization;Src tyrosine kinase signaling,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+lomeguatrib,367,Transferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+MK-2206,384,AKT3 protein kinase,Q9Y243,Kinase,1053,MK-2206,"MK 2206, MK2206",AKT,PI3K/MTOR signaling,AKT,46930998,GDSC2,772,SANGER,495,phase 2
+momelotinib,402,Tyrosine-protein kinase JAK2,O60674,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+OSI-027,450,Serine/threonine-protein kinase mTOR,P42345,Kinase,1594,OSI-027,A-1065-5,"MTORC1, MTORC2",PI3K/MTOR signaling,MTOR,44224160,GDSC2,265,SANGER,495,phase 2
+silmitasertib,554,CSNK,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+SNS-032,563,Cell division protein kinase 2;Cell division protein kinase 7;Cell division protein kinase 9,P24941;P50613;P50750,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+sotrastaurin,567,"Protein kinase C, alpha type;Protein kinase C, beta type;Protein kinase C, theta type",P17252;P05771;Q04759,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+TAK-715,585,Stress kinase p38,NA,Kinase,221,TAK-715,"KIN001-201, TAK 715","p38alpha, p38beta",JNK and p38 signaling,"p38alpha, p38beta",9952773,GDSC1,923,MGH,495,phase 2
+tandutinib,53,FL cytokine receptor,P36888,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+tivantinib,600,Hepatocyte growth factor receptor,P08581,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 2
+alisertib,94,Aurora,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+brivanib,160,Vascular endothelial growth factor receptor 2,P35968,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+canertinib,169,pan,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+cediranib,10,Vascular endothelial growth factor receptor 2,P35968,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+dinaciclib,226,CDK,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+Epothilone B,237,Tubulin,Q13509,Tubulin family,201,Epothilone B,"Patupilone, EpoB, EPO906, GNF-PF-193",Microtubule stabiliser,Mitosis,Microtubule stabiliser,448013,GDSC1,876,MGH,495,phase 3
+linifanib,365,VEGFR,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+masitinib,374,KIT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+Obatoclax Mesylate,447,Bcl,NA,NA,1068,Obatoclax Mesylate,"GX15-070MS, Obatoclax, GX15-070","BCL2, BCL-XL, BCL-W, MCL1",Apoptosis regulation,"BCL2, BCL-XL, BCL-W, MCL1",11404337,GDSC2,729,SANGER,495,phase 3
+quizartinib,514,FLT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+rigosertib,523,Phosphoinositide 3 kinase;Serine/threonine-protein kinase PLK1,P48736;P53350,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+tacedinaline,582,Histone deacetylase 1,Q13547,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+Talazoparib,586,PARP,NA,NA,1259,Talazoparib,"BMN-673, BMN 973","PARP1, PARP2",Genome integrity,"PARP1, PARP2",44819241,GDSC2,750,SANGER,495,phase 3
+tipifarnib,56,Farnesyltransferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+tivozanib,601,Vascular endothelial growth factor receptor 2;Vascular endothelial growth factor receptor 1;Vascular endothelial growth factor receptor 3,P35968;P17948;P35916,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+tosedostat,606,Aminopeptidase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,phase 3
+16-beta-bromoandrosterone,67,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+17-AAG,68,NA,NA,NA,1026,Tanespimycin,"17-AAG, BMS-722782",HSP90,Protein stability and degradation,HSP90,6505803,GDSC1,946,SANGER,495,nd
+1S,69,"D(2) dopamine receptor;Sodium-dependent dopamine transporter;Cannabinoid receptor 1;Metabotropic glutamate receptor 2;Acetylcholinesterase;Dopamine D1 receptor;Metabotropic glutamate receptor 5;Histamine H3 receptor;Gamma-aminobutyric-acid receptor alpha-3 subunit;Cannabinoid receptor 2;Sodium-dependent serotonin transporter;Metabotropicglutamate receptor 1;Sodium-dependent noradrenaline transporter;Metabotropic glutamate receptor3;Metabotropic glutamate receptor 7;Gamma-aminobutyric-acid receptor alpha-2 subunit;Gamma-aminobutyric-acid receptor alpha-5 subunit;Metabotropic glutamate receptor 8;Cathepsin K;Gamma-aminobutyric acid receptor subunit beta-2;Gamma-aminobutyric acid receptor subunit alpha-1;Gamma-aminobutyric acid receptor subunit gamma-2;Cholinesterase;Gamma-aminobutyric acid receptor;Glutathione reductase, mitochondrial;mGlu6 receptor",P14416;Q01959;P21554;Q14416;P22303;P21728;P41594;Q9Y5N1;P34903;P34972;P31645;Q13255;P23975;Q14832;Q14831;P47869;P31644;O00222;P43235;P47870;P14867;P18507;O15770;O15303,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+3-Cl-AHPC,70,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+5-FU,72,mRNA of Telomerase reverse transcriptase;mRNA of thymidylate synthase,O14746,Kinase,1073,5-Fluorouracil,5-FU,Antimetabolite (DNA & RNA),Other,Antimetabolite (DNA & RNA),3385,GDSC2,807,SANGER,495,nd
+681640,73,NA,NA,NA,1046,Wee1 Inhibitor,"681640, Wee1 Inhibitor","WEE1, CHEK1",Cell cycle,"WEE1, CHEK1",10384072,GDSC2,756,SANGER,495,nd
+968,74,Type-1 angiotensin II receptor;Vascular endothelial growth factor receptor 2;Arachidonate 5-lipoxygenase;Histamine H3 receptor;Carboxypeptidase B2;Type-2 angiotensin II receptor;Hypoxia-inducible factor 1 alpha;mRNA of Dystrophin;Calcium channel;Bacteria 50S ribosomal subunit;Histidine kinase KinA,P30556;P35968;P09917;Q9Y5N1;Q96IY4;P50052;Q16665;P11532;P0A7J3,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+A-443654,75,RAC serine/threonine-protein kinase,P31749,Kinase,86,A-443654,KIN001-139,AKT,PI3K/MTOR signaling,AKT,10172943,GDSC1,400,MGH,495,nd
+A-770041,76,Proto-oncogene tyrosine-protein kinase SRC;Lck tyrosine kinase,P12931;P06239,Kinase,55,A-770041,KIN001-111,"LCK, FYN","Other, kinases","LCK, FYN",9549184,GDSC1,400,MGH,495,nd
+A-804598,77,P2X purinoceptor 7,Q99572,ATP-gated P2X receptor cation channel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AA-COCF3,78,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ABT-199,82,NA,NA,NA,412,Venotoclax,"ABT-199, Veneclexta, GDC-0199",BCL-2 selective,Apoptosis regulation,BCL-2 selective,NA,GDSC1,912,MGH,495,nd
+ABT-263,83,Apoptosis regulator Bcl-2;Antiapoptotic protein BCL-XL;Bcl-2-like protein 2,P10415;Q07817;Q92843,Bcl-2 family,1011,Navitoclax,"ABT-263, ABT263, ABT 263","BCL2, BCL-XL, BCL-W",Apoptosis regulation,"BCL2, BCL-XL, BCL-W",24978538,GDSC2,751,SANGER,495,nd
+ABT-737,84,Apoptosis regulator Bcl-2,P10415,Bcl-2 family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ABT-888,85,Poly ADP ribose polymerase (PARP),NA,NA,1018,Veliparib,"ABT-888, ABT888, ABT 888","PARP1, PARP2",Genome integrity,"PARP1, PARP2",11960529,GDSC1,949,SANGER,495,nd
+AC220,86,NA,NA,NA,254,Quizartinib,"AC220, AC 220, AC-220, Asp-2689",FLT3,RTK signaling,FLT3,24889392,GDSC1,921,MGH,495,nd
+AC55649,87,Retinoic acid receptor beta,P10826,Nuclear hormone receptor,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AEW541,88,Insulin receptor,P06213,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AG-014699,89,NA,NA,NA,1175,Rucaparib,"PF-01367338, AG-014699, AG-14447, AG-14699","PARP1, PARP2",Genome integrity,"PARP1, PARP2",9931953,GDSC1,942,SANGER,495,nd
+AGK-2,91,Sirtuin,Q8IXJ6,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AICAR,92,Phosphoribosylaminoimidazolecarboxamide formyltransferase,P31939,Methyltransferase superfamily,1001,AICA Ribonucleotide,"AICAR, N1-(b-D-Ribofuranosyl)-5-aminoimidazole-4-carboxamide",AMPK agonist,Metabolism,AMPK agonist,65110,GDSC1,941,SANGER,495,nd
+AKT inhibitor VIII,93,RAC serine/threonine-protein kinase;AKT3 protein kinase;BCAM-AKT2 fusion gene,P31749;Q9Y243;P31751,Kinase,228,AKT inhibitor VIII,"Akti-1/2, KIN001-102",AKT,PI3K/MTOR signaling,AKT,10196499,GDSC1,920,MGH,495,nd
+AM-580,97,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AMG-706,98,NA,NA,NA,1029,Motesanib,"AMG-706, AMG 706, AMG706","VEGFR, RET, KIT, PDGFR",RTK signaling,"VEGFR, RET, KIT, PDGFR",11667893,GDSC1,943,SANGER,495,nd
+AP-24534,99,NA,NA,NA,155,Ponatinib,"AP24534, AP-24534, KIN001-192, Iclusig","ABL, PDGFRA, VEGFR2, FGFR1, SRC, TIE2, FLT3","Other, kinases","ABL, PDGFRA, VEGFR2, FGFR1, SRC, TIE2, FLT3",24826799,GDSC1,885,MGH,495,nd
+apicidin,100,Histone deacetylase,NA,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AS601245,103,Glycogen synthase kinase-3 beta;Mitogen-activated protein kinase 8;Mitogen-activated protein kinase 10;mRNA of human Jun-N-terminal kinase-2 (JNK2),P49841;P45983;P53779;P45984,Kinase,207,AS601245,NA,"JNK1, JNK2, JNK2",JNK and p38 signaling,"JNK1, JNK2, JNK2",10109823,GDSC1,878,MGH,495,nd
+AS605240,104,Amine oxidase [flavin-containing] B,P27338,Oxidoreductases acting on CH-NH2 group of donors,224,AS605240,"KIN001-173, AS-605240",PI3Kgamma,PI3K/MTOR signaling,PI3K,5289247,GDSC1,916,MGH,495,nd
+AT13387,107,Heat shock protein HSP 90,P07900,Heat shock protein,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AT7867,108,NA,NA,NA,356,AT7867,NA,AKT,PI3K/MTOR signaling,AKT,NA,GDSC1,926,MGH,495,nd
+ATRA,109,Coagulation factor Xa;Coagulation factor IIa;Plasminogen;Endothelin-1 receptor;Alpha-1A adrenergic receptor;Neuronal acetylcholinereceptor subunit alpha-2;Sodium/glucose cotransporter 1;Voltage-gated sodium channel subunit alpha Nav1.7;Voltage-gated sodium channel subunit alpha Nav1.8;Sodium channel protein type 5 subunit alpha;Voltage-gated sodium channel subunit alpha Nav1.3;Trypsin;Sodium channel protein type 4 subunit alpha;Adenine nucleotide translocator 1;mRNA of sodium-glucosetransporter-2;Nicotinic acetylcholine receptor;SCN8A sodium channel subunit;mRNA of SCN1A;Dopamine reuptake;Sodium channel protein type 2 subunit alpha;Cholinergic receptor,P00742;P00734;P00747;P25101;P35348;Q15822;P13866;Q15858;Q9Y5Y9;Q14524;Q9NY46;P07477;P35499;P12235;P31639;Q9UQD0;P35498;Q99250,Peptidase,1009,Tretinoin,"ATRA, Vesanoid, Renova, Atralin, Tretin-X, Avita",Retinoic acid,Other,Retinoic acid,444795,GDSC1,939,SANGER,495,nd
+austocystin d,110,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AUY922,111,Heat shock protein HSP90,NA,NA,1559,Luminespib,"AUY922, VER-52296,NVP-AUY922,  AUY",HSP90,Protein stability and degradation,HSP90,10096043,GDSC2,805,SANGER,495,nd
+avicin D,112,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+avrainvillamide,113,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AZ-3146,115,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AZ628,116,B-Raf proto-oncogene serine/threonine-protein kinase,P15056,Kinase,29,AZ628,"AZ-628, AZ 628",BRAF,ERK MAPK signaling,BRAF,11676786,GDSC1,403,MGH,495,nd
+AZD-2281,117,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AZD-7545,118,Pyruvate dehydrogenase kinase isoform 2 (PDHK2),Q15119,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+AZD0530,119,Proto-oncogene tyrosine-protein kinase SRC;Proto-oncogene c-Abl,P12931;P00519,Kinase,38,Saracatinib,"AZD0530, AZD-0530, AZ-10353926","ABL, SRC","Other, kinases","ABL, SRC",10302451,GDSC1,408,MGH,495,nd
+AZD6244,122,MEK protein kinase,NA,Kinase,1498,Selumetinib,"AZD6244, AZD-6244, ARRY-886","MEK1, MEK2",ERK MAPK signaling,"MEK1, MEK2",10127622,GDSC1,921,SANGER,495,nd
+B02,126,mRNA of RAF proto-oncogene serine/threonine-protein kinase;Cannabinoid receptor 1;mRNA of B-Raf;Granulocyte-macrophage colony-stimulating factor;Phosphodiesterase (PDE);Heat shock protein HSP90,P04049;P21554;P15056;P04141;P22413,Target of antisense drug,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+bafilomycin A1,127,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+barasertib,129,Aurora protein kinase;Aurora kinase B,NA,Kinase,NA,NA,NA,"AURKA, AURKB",Mitosis,"AURKA, AURKB",NA,NA,NA,NA,NA,nd
+bardoxolone methyl,130,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Bax channel blocker,131,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BAY 61-3606,132,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BCL-LZH-4,133,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BEC,134,Beta platelet-derived growth factor receptor;Toposisomerase-1;Glutamate receptor AMPA subtype;GABA A receptor;Fungal Cytochrome P450 51;mRNA of BCL-2;Beta-secretase;Steroid hormone receptor;Heat shock protein HSP90,P09619;P11387;P14867||P47869||P47870;Q99928;P10613;P10415,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+betulinic acid,136,"Glycogen phosphorylase, muscle form;DNA polymerase",P11217;P04293,Hexosyltransferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BHG712,138,NA,NA,NA,295,NVP-BHG712,BHG712,EPHB4,RTK signaling,EPHB4,16747388,GDSC1,919,MGH,495,nd
+BI-2536,139,NA,NA,NA,1086,BI-2536,NA,"PLK1, PLK2, PLK3",Cell cycle,"PLK1, PLK2, PLK3",11364421,GDSC2,45,SANGER,495,nd
+BIBR-1532,140,NA,NA,NA,2043,BIBR-1532,NA,TERT,Genome integrity,TERT,9927531,GDSC2,750,SANGER,495,nd
+BIBW2992,141,NA,NA,NA,1032,Afatinib,"BIBW2992, Tovok, Gilotrif","ERBB2, EGFR",EGFR signaling,"ERBB2, EGFR",10184653,GDSC2,807,SANGER,495,nd
+bid1870,143,"ribosomal protein S6 kinase, 90kDa, polypeptide 6;ribosomal protein S6 kinase, 90kDa, polypeptide 1;ribosomal protein S6 kinase, 90kDa, polypeptide 2",Q9UK32;Q15418;Q15349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BIRB 0796,144,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BIX-01294,146,euchromatic histone-lysine N-methyltransferase 2;euchromatic histone-lysine N-methyltransferase 1,Q96KQ7;Q9H9B1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BIX02189,147,NA,NA,NA,279,BIX02189,BIX 02189,"MEK5, ERK5",ERK MAPK signaling,"MEK5, ERK5",46931012,GDSC1,918,MGH,495,nd
+blebbistatin,148,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BMS-195614,150,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BMS-270394,151,Retinoic acid receptor gamma,P13631,Nuclear hormone receptor,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BMS-345541,152,Inhibitor of nuclear factor kappa-B kinase,Q14164,Kinase,1249,BMS-345541,NA,"IKK-1, IKK-2",Other,"IKK-1, IKK-2",9926054,GDSC2,729,SANGER,495,nd
+BMS-509744,153,Interleukin-2-inducible T cell kinase,NA,NA,63,BMS-509744,"KIN001-127, ITK inhibitor",ITK,"Other, kinases",ITK,20635522,GDSC1,401,MGH,495,nd
+BMS-536924,154,Vascular endothelial growth factor receptor 2;RAC serine/threonine-protein kinase;mRNA of HER2;Mitogen-activated protein kinase 1;Lck tyrosine kinase;Cell division protein kinase 2;Alpha platelet-derived growth factor receptor;Insulin-like growth factor I receptor;Hepatocyte growth factor receptor;Beta platelet-derived growth factor receptor;Focal adhesion kinase;Cytochrome P450 3A4;G1/S-specific cyclin E1,P35968;P31749;P04626;P28482;P06239;P24941;P16234;P08069;P08581;P09619;Q05397;P08684;P24864,Kinase,1091,BMS-536924,BMS 536924,"IGF1R, IR",IGF1R signaling,"IGF1R, IR",10390396,GDSC2,753,SANGER,495,nd
+BMS-708163,155,Gamma-secretase,Q96BI3||Q8WW43||Q9NZ42||Q92542||P49768,NA,1072,Avagacestat,"BMS-708163, BMS 708163","Amyloid beta20, Amyloid beta40",Other,"Amyloid beta20, Amyloid beta40",46883536,GDSC1,943,SANGER,495,nd
+brefeldin A,159,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+BX-795,162,Vascular endothelial growth factor receptor 2;Glycogen synthase kinase-3 beta;Cell division protein kinase 2;3-phosphoinositide dependent protein kinase-1;Serine/threonine-protein kinase Chk1;Protein kinase A,P35968;P49841;P24941;O15530;O14757;Q56921,Kinase,1037,BX795,BX-795,"TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC","Other, kinases","TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC",10077147,GDSC1,948,SANGER,495,nd
+BYL-719,164,PI3K alpha,P42336,Kinase,1560,Alpelisib,"BYL719, BYL-719, NVP-BYL719",PI3Kalpha,PI3K/MTOR signaling,PI3K,56649450,GDSC2,805,SANGER,495,nd
+C6-ceramide,165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CAL-101,167,NA,NA,NA,238,Idelalisib,"CAL-101, Zydelig",PI3Kdelta,PI3K/MTOR signaling,PI3K,11625818,GDSC1,921,MGH,495,nd
+CAY10576,170,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CAY10594,171,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CAY10603,172,NA,NA,NA,276,CAY10603,NA,"HDAC1, HDAC6",Chromatin histone acetylation,"HDAC1, HDAC6",24951314,GDSC1,910,MGH,495,nd
+CAY10618,173,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CBB-1007,174,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CCT007093,175,NA,NA,NA,1067,CCT007093,NA,PPM1D,Cell cycle,PPM1D,2314623,GDSC1,938,SANGER,495,nd
+CCT018159,176,Heat shock protein HSP90,NA,NA,1170,CCT-018159,"CCT018159, CCT 018159",HSP90,Protein stability and degradation,HSP90,5327091,GDSC1,936,SANGER,495,nd
+CCT036477,177,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CD-1530,178,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CD-437,179,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CEP-701,180,NA,NA,NA,1024,Lestaurtinib,"CEP-701, SP-924, SPM-924, A-154475, KT-555","FLT3, JAK2, NTRK1, NTRK2, NTRK3","Other, kinases","FLT3, JAK2, NTRK1, NTRK2, NTRK3",126565,GDSC1,945,SANGER,495,nd
+ceranib-2,181,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Cerulenin,11,Fatty acid synthase,P49327,Acyltransferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Cetuximab,182,Epidermal growth factor receptor,P00533,Kinase,1114,Cetuximab,"Erbitux, IMC-C225, C225, IMC-225, L01XC06",EGFR,EGFR signaling,EGFR,85668777,GDSC1,875,SANGER,495,nd
+CGP-082996,185,NA,NA,NA,54,CGP-082996,"CINK4, KIN001-021",CDK4,Cell cycle,CDK4,24825971,GDSC1,400,MGH,495,nd
+CGP-60474,186,Cell division control protein 2 homolog,P06493,Kinase,53,CGP-60474,"KIN001-019, CGP60474, CGP 60474","CDK1,CDK2,CDK5,CDK7,CDK9, PKC",Cell cycle,"CDK1,CDK2,CDK5,CDK7,CDK9, PKC",644215,GDSC1,400,MGH,495,nd
+Ch-55,187,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CH5424802,188,NA,NA,NA,281,Alectinib,"CH5424802, CH 542802, Alecensa",ALK,RTK signaling,ALK,49806720,GDSC1,918,MGH,495,nd
+CHEMBL1222381,189,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CHEMBL374350,190,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CHIR-99021,191,Mitogen-activated protein kinase 1;Glycogen synthase kinase-3 beta;Cell division control protein 2 homolog;mRNA of human glycogen synthase kinase 3 alpha,P28482;P49841;P06493;P49840,Kinase,1241,CHIR-99021,"CT 99021, CHIR99021, CHIR 99021","GSK3A, GSK3B",WNT signaling,"GSK3A, GSK3B",9956119,GDSC1,913,SANGER,495,nd
+CHM-1,192,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CI-1040,193,"RAC serine/threonine-protein kinase;Mitogen-activated protein kinase 14;Mitogen-activated protein kinase 1;Protein kinase C, alpha type;Lck tyrosine kinase;Glycogen synthase kinase-3 beta;Mitogen-activated protein kinase 8;Ribosomal protein S6 kinase;MAP kinase p38;Mitogen-activated protein kinase 11;Rho-associated protein kinase 1;Serine/threonine-protein kinase Sgk1;Serine/threonine-protein kinase Chk1",P31749;Q16539;P28482;P17252;P06239;P49841;P45983;P23443;P53778;Q15759;Q13464;O00141;O14757,Kinase,1015,CI-1040,"CI 1040, PD-18435, PD-184352, 212631-79-3","MEK1, MEK2",ERK MAPK signaling,"MEK1, MEK2",6918454,GDSC1,932,SANGER,495,nd
+CI-976,194,Liver carboxylesterase,P23141,Carboxylic ester hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ciclopirox,13,HIF prolyl hydroxylase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ciclosporin,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CID-5951923,195,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CIL41,196,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CIL55,197,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CIL55A,198,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CIL56,199,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CIL70,200,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+cimetidine,15,Histamine H2 receptor,P25021,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CMK,201,NA,NA,NA,64,CMK,KIN001-128,RSK2,"Other, kinases",RSK2,16663089,GDSC1,400,MGH,495,nd
+COL-3,202,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Compound 1541A,203,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+compound 1B,204,Cathepsin K;Neutral endopeptidase;Carboxypeptidase A1 (pancreatic);cathepsin H,P43235;P08473;P15085;P09668,Peptidase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Compound 23 citrate,205,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Compound 7d-cis,206,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CP466722,207,NA,NA,NA,152,CP466722,"CP-466722, CP 466722, 1080622-86-1",ATM,Genome integrity,ATM,44551660,GDSC1,922,MGH,495,nd
+CR-1-31B,209,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+cucurbitacin I,212,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Curcumin,214,"Prostaglandin G/H synthase 2;Prostaglandin G/H synthase 1;MMP-9;Xanthine dehydrogenase/oxidase;Carbonic anhydrase IX;Collagenase 3;Carbonic anhydrase I;Nitric oxide synthase, inducible;Amyloid beta A4 protein;Carbonic anhydrase IV;Cytochrome P450 3A4;Carbonic anhydrase II;Carbonic anhydrase XII;DNA (cytosine-5)-methyltransferase 3B;Carbonic anhydrase XIV;Carbonic anhydrase VI;DNA (cytosine-5)-methyltransferase;Carbonic anhydrase;Multidrug resistance protein",P35354;P23219;P14780;P47989;Q16790;P45452;P00915;P35228;P05067;P22748;P08684;P00918;O43570;Q9UBC3;Q9ULX7;P23280,Oxidoreductases acting on paired donors,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+CX-5461,215,NA,NA,NA,300,CX-5461,"CX5461, CX 5461",RNA Polymerase 1,Other,RNA Polymerase 1,25257557,GDSC1,913,MGH,495,nd
+cyanoquinoline 11,216,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+cytochalasin b,218,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+darinaparsin,220,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+DBeQ,222,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+decitabine,223,Human DNA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+DMOG,227,NA,NA,NA,165,DMOG,Dimethyloxalylglcine,HIF-PH,Metabolism,HIF-PH,560326,GDSC1,884,MGH,495,nd
+EHT 1864,230,NA,NA,NA,1069,EHT-1864,EHT 1864,"RAC1, RAC2, RAC3",Cytoskeleton,"RAC1, RAC2, RAC3",9938202,GDSC1,943,SANGER,495,nd
+EKB-569,231,NA,NA,NA,282,Pelitinib,"EKB-569, EKB 569",EGFR,EGFR signaling,EGFR,6445562,GDSC1,920,MGH,495,nd
+ELCPK,232,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Elesclomol,233,NA,NA,NA,1031,Elesclomol,STA-4783,HSP90,Protein stability and degradation,HSP90,300471,GDSC1,936,SANGER,495,nd
+elocalcitol,234,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+embelin,235,mRNA of Inhibitor of apoptosis protein,P98170,Target of antisense drug,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+epigallocatechin-3-monogallate,236,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+erismodegib,239,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+etomoxir,243,Carnitine O-palmitoyltransferase I,Q92523,Acyltransferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+etoposide,25,DNA topoisomerase II,NA,ATP-hydrolyzing DNA topoisomerase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ETP-46464,244,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+EX-527,246,NA,NA,NA,341,Selisistat,"EX-527, EX 527",SIRT1,Chromatin histone acetylation,SIRT1,5113032,GDSC1,916,MGH,495,nd
+FGIN-1-27,248,Peripheral-type benzodiazepine receptor,P30536,Cholesterol porphyrin uptake translocator,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+FH535,249,NA,NA,NA,173,FH535,NA,"PPARgamma, PPARdelta","Other, kinases","PPARgamma, PPARdelta",3463933,GDSC1,876,MGH,495,nd
+FK866,250,NA,NA,NA,1248,Daporinad,"APO866,  FK866, FK866",NAMPT,Metabolism,NAMPT,6914657,GDSC2,382,SANGER,495,nd
+fluvastatin,27,3-hydroxy-3-methylglutaryl-coenzyme A reductase,P04035,Short-chain dehydrogenases reductases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+FMK,251,Caspase-9;Interleukin-1 beta convertase,P55211;P29466,Peptidase,231,FMK,KIN001-242,RSK,"Other, kinases",RSK,none,GDSC1,792,MGH,495,nd
+FQI-1,253,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+FQI-2,254,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+FR-180204,255,Mitogen-activated protein kinase 1,P28482,Kinase,263,FR-180204,"FR 180204, FR180204, ERK Inhibitor II","ERK1, ERK2",ERK MAPK signaling,"ERK1, ERK2",11493598,GDSC1,919,MGH,495,nd
+FSC231,256,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+FTI-277,258,NA,NA,NA,166,FTI-277,NA,Farnesyl-transferase (FNTA),Other,Farnesyl-transferase (FNTA),3005532,GDSC1,888,MGH,495,nd
+Fumonisin B1,260,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GANT-61,261,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GDC-0449,262,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GDC-0879,263,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GDC-0941,264,Phosphoinositide 3 kinase,P48736,Kinase,1058,Pictilisib,"GDC-0941, GDC0941, RG-7621",PI3K (class 1),PI3K/MTOR signaling,PI3K,17755052,GDSC2,767,SANGER,495,nd
+Genentech Cpd 10,267,NA,NA,NA,225,Genentech Cpd 10,NA,"AURKA, AURKB",Mitosis,"AURKA, AURKB",none,GDSC1,919,MGH,495,nd
+GMX-1778,269,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GNF-2,270,NA,NA,NA,52,GNF-2,KIN001-013,BCR-ABL,ABL signaling,BCR-ABL,5311510,GDSC1,398,MGH,495,nd
+gossypol,271,Apoptosis regulator Bcl-2,P10415,Bcl-2 family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GSK-3 inhibitor IX,273,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GSK-650394,274,Serine/threonine-protein kinase Sgk1,O00141,Kinase,177,GSK650394,"GSK-650394, GSK 650394","SGK2, SGK3","Other, kinases","SGK2, SGK3",25022668,GDSC1,872,MGH,495,nd
+GSK1059615,276,Phosphoinositide 3 kinase,P48736,Kinase,374,GSK1059615,NA,"PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR signaling,PI3K,NA,GDSC1,912,MGH,495,nd
+GSK1120212,279,NA,NA,NA,1372,Trametinib,"GSK1120212, Mekinist","MEK1, MEK2",ERK MAPK signaling,"MEK1, MEK2",11707110,GDSC2,772,SANGER,495,nd
+GSK2126458,282,Phosphoinositide 3 kinase,P48736,Kinase,283,Omipalisib,"GSK2126458, GSK-2126458, EX-8678, GSK458","PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR signaling,PI3K,25167777,GDSC1,921,MGH,495,nd
+GSK4112,286,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GSK429286A,287,NA,NA,NA,230,GSK429286A,NA,"ROCK1, ROCK2",Cytoskeleton,"ROCK1, ROCK2",11373846,GDSC1,920,MGH,495,nd
+GSK461364,288,Serine/threonine-protein kinase PLK1,P53350,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GSK525762A,289,NA,NA,NA,1624,I-BET-762,GSK525762A,"BRD2, BRD3, BRD4",Chromatin other,"BRD2, BRD3, BRD4",46943432,GDSC2,728,SANGER,495,nd
+GW-2580,292,mRNA of Colony stimulating factor-1 receptor,P07333,Target of antisense drug,193,GW-2580,"GX2580, CFMS receptor tyrosine kinase inhibitor",CSF1R,RTK signaling,CSF1R,11617559,GDSC1,921,MGH,495,nd
+GW-405833,293,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+GW 441756,294,NA,NA,NA,1023,GW441756,GW 441756,NTRK1,RTK signaling,NTRK1,9943465,GDSC1,946,SANGER,495,nd
+GW843682X,295,NA,NA,NA,87,GW843682X,GW843682X (AN-13),PLK1,Cell cycle,PLK1,9826308,GDSC1,397,MGH,495,nd
+HBX-41108,296,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+HC-067047,297,Transient receptor potential cation channel subfamily V member 4,Q9HBA0,Transient receptor family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+HG-5-113-01,298,NA,NA,NA,1142,HG-5-113-01,NA,"LOK, LTK, TRCB, ABL(T315I)",Other,"LOK, LTK, TRCB, ABL(T315I)",none,GDSC1,495,SANGER,495,nd
+HG-5-88-01,299,NA,NA,NA,1143,HG-5-88-01,NA,"EGFR, ADCK4","Other, kinases","EGFR, ADCK4",none,GDSC1,494,SANGER,495,nd
+HG-6-64-1,300,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+HLI 373,301,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+hyperforin,302,Prostaglandin G/H synthase 1;Arachidonate 5-lipoxygenase;Pregnane X receptor,P23219;P09917;O75469,Oxidoreductases acting on paired donors,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+I-BET-762,303,NA,NA,NA,1624,I-BET-762,GSK525762A,"BRD2, BRD3, BRD4",Chromatin other,"BRD2, BRD3, BRD4",46943432,GDSC2,728,SANGER,495,nd
+IC-87114,306,PI3K delta,O00329,Kinase,236,IC-87114,NA,PI3Kdelta,PI3K/MTOR signaling,PI3K,NA,GDSC1,920,MGH,495,nd
+importazole,309,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+indisulam,310,Carbonic anhydrase IX,Q16790,Carbon-oxygen lyases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+IPA-3,64,NA,NA,NA,176,IPA-3,IPA 3,PAK1,Cytoskeleton,PAK1,521106,GDSC1,877,MGH,495,nd
+IPR-456,312,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+isoevodiamine,313,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+isoliquiritigenin,314,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+isonicotinohydroxamic acid,315,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ISOX,316,"Estrogen receptor;Prostaglandin G/H synthase 2;Prostaglandin G/H synthase 1;Sodium-dependent dopamine transporter;Estradiol 17 beta-dehydrogenase 1;mRNA of Protein tyrosine phosphatase-1B;Estrogen receptor beta;Gamma-aminobutyric-acid receptor alpha-3 subunit;Sodium-dependent serotonin transporter;Aldose reductase;Sodium-dependent noradrenaline transporter;NMDA receptor subunit NR1;Gamma-aminobutyric-acid receptor alpha-2 subunit;Gamma-aminobutyric-acid receptor alpha-5 subunit;Dihydroorotate dehydrogenase, mitochondrial;Dihydropteroate synthetase;Gamma-aminobutyric acid receptor subunit beta-2;Glutamate receptor AMPA subtype;Gamma-aminobutyric acid receptor subunit alpha-1;Soluble epoxide hydrolase;ATP-sensitive inward rectifier potassium channel 10;Gamma-aminobutyric acid receptor subunit gamma-2;Acyl-CoA desaturase;Gamma-aminobutyric acid receptor;Bromodomain-containing protein 4;L-lactate dehydrogenase;Alanine racemase,biosynthetic",P03372;P35354;P23219;Q01959;P14061;P18031;Q92731;P34903;P31645;P15121;P23975;Q05586;P47869;P31644;Q08210;P0AC13;P47870;P14867||P47869||P47870;P14867;P34913;P78508;P18507;O00767;O60885;Q27797;P94967,Zinc-finger,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Ispinesib Mesylate,319,NA,NA,NA,208,Ispinesib Mesylate,SB-715992,KSP,Mitosis,KSP,6450816,GDSC1,918,MGH,495,nd
+istradefylline,320,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+IU1,321,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+JNJ-26854165,323,Ubiquitin-protein ligase E3 Mdm2,Q00987,Carbon-nitrogen ligase,1133,Serdemetan,JNJ-26854165,MDM2,p53 pathway,MDM2,11609586,GDSC1,940,SANGER,495,nd
+JNK-9L,324,NA,NA,NA,157,JNK-9L,"KIN001-204, JNK inhibitor 9l","JNK2, JNK3",JNK and p38 signaling,"JNK2, JNK3",25222038,GDSC1,887,MGH,495,nd
+JNK Inhibitor VIII,325,NA,NA,NA,1043,JNK Inhibitor VIII,NA,JNK,JNK and p38 signaling,JNK,11624601,GDSC1,945,SANGER,495,nd
+JQ-1,326,Bromodomain-containing protein 4;Bromodomain testis-specific protein,O60885;Q58F21,Bromodomain,2172,JQ1,"JQ-1, (+)-JQ-1","BRD2, BRD3, BRD4, BRDT",Chromatin other,"BRD2, BRD3, BRD4, BRDT",46907787,GDSC2,48,SANGER,495,nd
+JW-480,332,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+JW-55,333,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+JW-7-24-1,334,NA,NA,NA,256,JW-7-24-1,NA,LCK,"Other, kinases",LCK,none,GDSC1,921,MGH,495,nd
+JW-7-52-1,335,NA,NA,NA,83,JW-7-52-1,NA,"MTORC1, MTORC2",PI3K/MTOR signaling,MTOR,49836027,GDSC1,385,MGH,495,nd
+JW-74,336,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KH-CB19,337,Cdc2-like kinase 1;dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1A;CDC-like kinase 3,P49759;Q13627;P49761,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KHS101,338,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Ki8751,339,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KIN001-055,340,NA,NA,NA,288,WHI-P97,"AC1L1GQE, KIN001-055",JAK3,"Other, kinases",JAK3,3796,GDSC1,919,MGH,495,nd
+KIN001-102,341,NA,NA,NA,228,AKT inhibitor VIII,"Akti-1/2, KIN001-102",AKT,PI3K/MTOR signaling,AKT,10196499,GDSC1,920,MGH,495,nd
+KIN001-135,342,NA,NA,NA,91,GSK319347A,"KIN001-135, IKK-3 inhibitor",IKK,"Other, kinases",IKK,11626927,GDSC1,402,MGH,495,nd
+KIN001-236,343,NA,NA,NA,286,KIN001-236,NA,Angiopoietin-1 receptor,RTK signaling,Angiopoietin-1 receptor,none,GDSC1,919,MGH,495,nd
+KIN001-244,344,NA,NA,NA,287,KIN001-244,PDK1 inhibitor 7,PDK1 (PDPK1),Metabolism,PDK1 (PDPK1),56965967,GDSC1,918,MGH,495,nd
+KIN001-260,345,NA,NA,NA,290,KIN001-260,"Bayer IKKb inhibitor, ACHP",IKKB,"Other, kinases",IKKB,10451420,GDSC1,918,MGH,495,nd
+KIN001-266,346,NA,NA,NA,291,KIN001-266,NA,MAP3K8,ERK MAPK signaling,MAP3K8,44143370,GDSC1,918,MGH,495,nd
+KIN001-270,347,NA,NA,NA,345,KIN001-270,"CDK9 inhibitor, CDK9-IN-1",CDK9,Cell cycle,CDK9,66577006,GDSC1,919,MGH,495,nd
+Ko-143,348,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KPT185,349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KU-0063794,350,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+KU-55933,351,DNA-dependent protein kinase catalytic subunit,P78527,Kinase,1030,KU-55933,KU55933,ATM,Genome integrity,ATM,5278396,GDSC2,49,SANGER,495,nd
+KU 0060648,353,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+L-685458,356,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LAQ824,358,Histone deacetylase 1,Q13547,Carbon-nitrogen hydrolase,200,Dacinostat,"NVP-LAQ824, LAQ824",HDAC1,Chromatin histone acetylation,HDAC1,6445533,GDSC1,879,MGH,495,nd
+LBW242,359,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LE-135,360,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+leptomycin B,362,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LFM-A13,364,Tyrosine-protein kinase BTK,Q06187,Kinase,192,LFM-A13,DDE-28,BTK,"Other, kinases",BTK,54676905,GDSC1,879,MGH,495,nd
+Lisitinib,366,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LRRK2-IN-1,368,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LY-2157299,369,TGF-beta receptor type I,P36897,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LY-2183240,370,Fatty-acid amide hydrolase,O00519,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+LY317615,371,NA,NA,NA,229,Enzastaurin,LY317615,PKCB,"Other, kinases",PKCB,176167,GDSC1,919,MGH,495,nd
+manumycin A,372,Protein farnesyltransferase beta subunit;Farnesyltransferase,P49356,Alkyl aryl transferase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+marinopyrrole A,373,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Mdivi-1,375,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Merck60,376,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+methylstat,377,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MG-132,378,NA,NA,NA,9,MG-132,"LLL cpd, MG 132, MG132","Proteasome, CAPN1",Protein stability and degradation,"Proteasome, CAPN1",462382,GDSC1,399,MGH,495,nd
+MGCD-265,379,Tyrosine-protein kinase receptor UFO,P30530,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MI-1,380,Prostaglandin G/H synthase 2;Muscarinic acetylcholine receptor M2;Sodium-dependent noradrenaline transporter;Muscarinic acetylcholine receptor M4;E-selectin;P-selectin;L-selectin;Dibasic-processing enzyme (Furin);Beta-secretase;Cyclooxygenase;protein arginine methyltransferase 1,P35354;P08172;P23975;P08173;P16581;P16109;P14151;P09958;Q99873,Oxidoreductases acting on paired donors,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MI-2,381,Arachidonate 5-lipoxygenase;Platelet-activating factor receptor,P09917;P25105,Oxidoreductases acting on single donors,1511,Epirubicin,"Ellence, Farmorubicin, IMI-28",Anthracycline,DNA replication,Anthracycline,41867,GDSC2,753,SANGER,495,nd
+Mitomycin-C,41,NA,NA,NA,136,Mitomycin-C,"Mytozytrex, NSC-26980, MMC, Mitosol, Mitozytrex",DNA crosslinker,DNA replication,DNA crosslinker,5746,GDSC1,878,MGH,495,nd
+MK-0752,383,Gamma-secretase,Q96BI3||Q8WW43||Q9NZ42||Q92542||P49768,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MK 1775,385,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML006,386,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML031,387,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML050,388,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML083,389,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML162,390,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML203,391,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML210,392,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML239,393,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML258,394,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML311,395,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML312,396,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML320,397,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ML334 diastereomer,398,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MLN2238,399,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MLN2480,400,mRNA of RAF proto-oncogene serine/threonine-protein kinase,P04049,Target of antisense drug,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+MLN4924,401,NA,NA,NA,1529,Pevonedistat,"MLN4924, MLN 4924, MLN-4924",NAE,Other,NAE,16720766,GDSC2,751,SANGER,495,nd
+MP470,42,Alpha platelet-derived growth factor receptor;Mast/stem cell growth factor receptor,P16234;P10721,Kinase,293,Amuvatinib,"MP470, MP 470, MP-470","KIT, PDGFRA, FLT3",RTK signaling,"KIT, PDGFRA, FLT3",11282283,GDSC1,913,MGH,495,nd
+MPS-1-IN-1,403,NA,NA,NA,294,MPS-1-IN-1,NA,MPS1,Mitosis,MPS1,25195352,GDSC1,917,MGH,495,nd
+MS-275,404,Tubulin,Q13509,Tubulin family,1593,Entinostat,MS-275,"HDAC1, HDAC3",Chromatin histone acetylation,"HDAC1, HDAC3",4261,GDSC2,736,SANGER,495,nd
+myricetin,406,Phosphoinositide 3 kinase,P48736,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+myriocin,407,RAC serine/threonine-protein kinase,P31749,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+N9-isopropylolomoucine,408,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+nakiterpiosin,409,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+narciclasine,410,Elongation factor 1A,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+necrostatin-1,417,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+necrostatin-7,418,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+necrosulfonamide,419,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+neopeltolide,422,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NG-25,424,Proto-oncogene tyrosine-protein kinase SRC;Lyn tyrosine kinase;Mitogen-activated protein kinase kinase kinase 7;c-src tyrosine kinase,P12931;P07948;O43318;P41240,Kinase,260,NG-25,NG25,"TAK1, MAP4K2","Other, kinases","TAK1, MAP4K2",53340664,GDSC1,919,MGH,495,nd
+niclosamide,43,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NPC-26,426,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NPK76-II-72-1,427,NA,NA,NA,257,NPK76-II-72-1,NA,PLK3,Cell cycle,PLK3,none,GDSC1,918,MGH,495,nd
+NSC-207895,428,NA,NA,NA,269,NSC-207895,"XI-006, NSC207895",MDM4,p53 pathway,MDM4,42640,GDSC1,915,MGH,495,nd
+NSC-87877,429,"Protein-tyrosine phosphatase, non-receptor type 11",Q06124,Phosphoric monoester hydrolases,147,NSC-87877,NSC 87877,"SHP-1 (PTPN6), SHP-2 (PTPN11)",Other,"SHP-1 (PTPN6), SHP-2 (PTPN11)",5459322,GDSC1,885,MGH,495,nd
+NSC 74859,430,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NSC19630,431,NA,NA,NA,1931,MIRA-1,"MIRA 1, MIRA1, NSC19630, NSC-19630, NSC 19630",TP53,p53 pathway,TP53,227681,GDSC2,752,SANGER,495,nd
+NSC23766,432,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NSC30930,433,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NSC48300,434,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NSC632839,435,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NSC95397,437,M-phase inducer phosphatase 2;M-phase inducer phosphatase 1,P30305;P30304,Phosphoric monoester hydrolases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NU-7441,438,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Nutlin-3a (-),441,NA,NA,NA,1047,Nutlin-3a (-),NA,MDM2,p53 pathway,MDM2,11433190,GDSC2,774,SANGER,495,nd
+NVP-231,442,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+NVP-ADW742,443,Insulin-like growth factor I receptor,P08069,Kinase,1932,NVP-ADW742,"NVP ADW742, NVPADW742",IGF1R,IGF1R signaling,IGF1R,9825149,GDSC2,753,SANGER,495,nd
+NVP-BEZ235,444,NA,NA,NA,1057,Dactolisib,"NVP-BEZ235, BEZ235","PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR signaling,PI3K,11977753,GDSC2,753,SANGER,495,nd
+NVP-BSK805,445,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+O-6-benzylguanine,446,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+oligomycin a,448,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+OSI-906,451,Insulin-like growth factor I receptor,P08069,Kinase,1510,Linsitinib,"OSI-906, ASP-7487",IGF1R,IGF1R signaling,IGF1R,11640390,GDSC2,805,SANGER,495,nd
+ouabain,46,Sodium/potassium-transporting ATPase alpha-1 chain,P05023,Acid anhydrides hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+palmostatin B,457,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+pandacostat,458,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+parbendazole,460,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Parthenolide,461,Nuclear factor NF-kappa-B;Inhibitor of nuclear factor kappa B kinase beta subunit,Q00653;O14920,Kinase,89,Parthenolide,NA,HDAC1,Chromatin histone acetylation,HDAC1,7251185,GDSC1,402,MGH,495,nd
+Pazopanib,463,Epidermal growth factor receptor;Receptor protein-tyrosine kinase erbB-2;Vascular endothelial growth factor receptor 2;Mast/stem cell growth factor receptor;Platelet-derived growth factor receptor,P00533;P04626;P35968;P10721,Kinase,199,Pazopanib,Votrient,"CSF1R, KIT,  PDGFRA, PDGFRB",RTK signaling,"CSF1R, KIT,  PDGFRA, PDGFRB",10113978,GDSC1,874,MGH,495,nd
+PD-0325901,464,MEK protein kinase,NA,Kinase,1060,PD0325901,"PD-0325901, PD 0325901","MEK1, MEK2",ERK MAPK signaling,"MEK1, MEK2",9826528,GDSC2,805,SANGER,495,nd
+PD-0332991,465,NA,NA,NA,1054,Palbociclib,"PD0332991, PD-0332991, PF-00080665-73","CDK4, CDK6",Cell cycle,"CDK4, CDK6",5330286,GDSC2,771,SANGER,495,nd
+PD 153035,466,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PD173074,467,Proto-oncogene tyrosine-protein kinase SRC;Fibroblast growth factor receptor,P12931,Kinase,1049,PD173074,"PD-173074, PD 173074","FGFR1, FGFR3",RTK signaling,"FGFR1, FGFR3",1401,GDSC2,759,SANGER,495,nd
+PD318088,468,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PDMP,470,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PF-184,472,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PF-3758309,474,PAK-4 protein kinase,O96013,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PF-4708671,477,Ribosomal protein S6 kinase,P23443,Kinase,1129,PF-4708671,"PF 4708671, PF4708671",S6K1,PI3K/MTOR signaling,S6K1,51371303,GDSC2,49,SANGER,495,nd
+PF-543,479,Sphingosine kinase;Dipeptidyl-peptidase I;Cathepsin S;Cathepsin K;Cathepsin B,Q9NYA1;P53634;P25774;P43235;P07858,Kinase,408,Sphingosine Kinase 1 Inhibitor II,PF-543,Sphingosine Kinase,"Other, kinases",Sphingosine Kinase,NA,GDSC1,926,MGH,495,nd
+PF-573228,481,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PF-750,482,Fatty-acid amide hydrolase,O00519,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PHA-665752,484,Hepatocyte growth factor receptor,P08581,Kinase,6,PHA-665752,"PHA665752, PHA 665752",MET,RTK signaling,MET,10461815,GDSC1,408,MGH,495,nd
+phenformin,48,AMP-activated protein kinase,NA,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+phloretin,486,AQP9;ClC-3;Sodium-dependent vitamin C transporter 1,O43315;P51790;Q9UHI7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PI-103,487,Phosphoinositide 3 kinase,P48736,Kinase,302,PI-103,"PI-103, PI103, PI 103","PI3Kalpha, DAPK3, CLK4, PIM3, HIPK2","Other, kinases","PI3Kalpha, DAPK3, CLK4, PIM3, HIPK2",9884685,GDSC1,908,MGH,495,nd
+pifithrin-alpha,488,Cellular tumor antigenp53,P04637,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+pifithrin-mu,489,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PIK-93,490,"phosphatidylinositol 4-kinase, catalytic, beta",Q9UBF8,NA,303,PIK-93,"PIK 93, PIK93",PI3Kgamma,PI3K/MTOR signaling,PI3K,6852167,GDSC1,918,MGH,495,nd
+piperlongumine,491,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+pitstop2,493,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PL-DI,494,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Platin,495,Receptor protein-tyrosine kinase erbB-2;Estrogen receptor;Apoptosis regulator Bcl-2;Estrogen receptor beta;mRNA of Telomerase reverse transcriptase;Tubulin beta-1 chain;Human DNA,P04626;P03372;P10415;Q92731;O14746;Q9H4B7,Kinase,1005,Cisplatin,"cis-Diammineplatinum(II) dichloride, Platinol, CIS-DDP",DNA crosslinker,DNA replication,DNA crosslinker,84691,GDSC2,769,SANGER,495,nd
+pluripotin,496,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PLX-4032,497,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PLX4720,498,Vascular endothelial growth factor receptor 2;mRNA of B-Raf,P35968;P15056,Kinase,1036,PLX-4720,"PLX4720, PLX 4720",BRAF,ERK MAPK signaling,BRAF,24180719,GDSC2,798,SANGER,495,nd
+prima-1,499,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PRIMA-1-Met,500,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PRL-3 Inhibitor I,501,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+prochlorperazine,50,D(2) dopamine receptor,P14416,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+purmorphamine,502,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PX-12,504,Thioredoxin,P10599,Thioredoxin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+PYR-41,505,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+pyrazolanthrone,506,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Pyrimethamine,507,Folate receptor alpha,P15328,Folate receptor,71,Pyrimethamine,"Daraprim, Chloridine",Dihydrofolate reductase (DHFR),Other,Dihydrofolate reductase (DHFR),4993,GDSC1,400,MGH,495,nd
+QL-VIII-58,508,NA,NA,NA,1166,QL-VIII-58,NA,"MTOR, ATR",Other,"MTOR, ATR",none,GDSC1,497,SANGER,495,nd
+QL-X-138,509,NA,NA,NA,331,QL-X-138,NA,BTK,"Other, kinases",BTK,none,GDSC1,909,MGH,495,nd
+QL-XI-92,510,NA,NA,NA,329,QL-XI-92,NA,DDR1,Cytoskeleton,DDR1,none,GDSC1,921,MGH,495,nd
+QL-XII-47,511,NA,NA,NA,235,QL-XII-47,NA,"BTK, BMX","Other, kinases","BTK, BMX",none,GDSC1,912,MGH,495,nd
+QL-XII-61,512,NA,NA,NA,1203,QL-XII-61,NA,"BMX, BTK","Other, kinases","BMX, BTK",none,GDSC1,473,SANGER,495,nd
+QS11,513,NA,NA,NA,151,QS11,944328-88-5,ARFGAP1,Other,ARFGAP1,4263900,GDSC1,880,MGH,495,nd
+QW-BI-011,515,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+R428,516,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+RAF265,517,Vascular endothelial growth factor receptor 2,P35968,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+RDEA119,519,NA,NA,NA,1526,Refametinib,"RDEA119, BAY-86-9766, BAY 869766","MEK1, MEK2",ERK MAPK signaling,"MEK1, MEK2",44182295,GDSC1,876,SANGER,495,nd
+Repligen 136,521,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+RG-108,522,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+RITA,524,Sodium-dependent dopamine transporter;5-hydroxytryptamine 2A receptor;Sodium-dependent serotonin transporter;5-hydroxytryptamine 2C receptor;5-hydroxytryptamine 2B receptor;Dihydropteroate synthetase;Adenosylhomocysteinase;Ferritin;Nonstructural protein NS3;5-hydroxytryptamine receptor;5-hydroxytryptamine 2 receptor,Q01959;P28223;P31645;P28335;P41595;P0AC13;P23526;P02794;P26664 (1027-1657),Neurotransmitter:sodium symporter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+RO-3306,525,NA,NA,NA,1052,RO-3306,NA,CDK1,Cell cycle,CDK1,44450571,GDSC2,49,SANGER,495,nd
+RO4929097,526,Gamma-secretase,Q96BI3||Q8WW43||Q9NZ42||Q92542||P49768,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Roscovitine,527,Cell division protein kinase 2;Cell division control protein 2 homolog;Cell division protein kinase 7,P24941;P06493;P50613,Kinase,110,Seliciclib,"Roscovitine, CYC-202, AL-39256","CDK2, CDK7, CDK9",Cell cycle,"CDK2, CDK7, CDK9",160355,GDSC1,396,MGH,495,nd
+rTRAIL,528,NA,NA,NA,1261,rTRAIL,NA,TRAIL receptor agonist,Apoptosis regulation,TRAIL receptor agonist,none,GDSC1,920,SANGER,495,nd
+salermide,531,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Salubrinal,533,NA,NA,NA,111,Salubrinal,EIF-2alpha Inhibitor,EIF2A,Other,EIF2A,5717801,GDSC1,398,MGH,495,nd
+SB-225002,534,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SB-431542,536,TGF-beta receptor type I,P36897,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SB-525334,537,TGF-beta receptor type I,P36897,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SB-743921,538,Kinesin-like protein KIF11,P52732,Kinesin-like protein family,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SB 216763,539,NA,NA,NA,1025,SB216763,"SB-216763, SB 216763","GSK3A, GSK3B",WNT signaling,"GSK3A, GSK3B",176158,GDSC2,96,SANGER,495,nd
+SB 505124,540,NA,NA,NA,1194,SB505124,"SB 505124, SB505124","TGFBR1, ACVR1B, ACVR1C",RTK signaling,"TGFBR1, ACVR1B, ACVR1C",9858940,GDSC2,47,SANGER,495,nd
+SB52334,541,NA,NA,NA,304,SB52334,"SB-52334, SB 52334",ALK5,"Other, kinases",ALK5,9967941,GDSC1,916,MGH,495,nd
+SB590885,542,NA,NA,NA,1061,SB590885,SB-590885,BRAF,ERK MAPK signaling,BRAF,11316960,GDSC1,910,SANGER,495,nd
+SCH-529074,543,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SCH-79797,544,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+semagacestat,545,Gamma-secretase,Q96BI3||Q8WW43||Q9NZ42||Q92542||P49768,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+shikonin,550,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SID 26681509,551,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Sildenafil,553,"CGMP-specific 3',5'-cyclic phosphodiesterase",O76074,Phosphoric diester hydrolases,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+sitagliptin,556,Dipeptidyl peptidase IV,P27487,Peptidase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SJ-172550,557,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+skepinone-L,558,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SKI-II,559,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SL 0101-1,560,NA,NA,NA,1039,SL0101,"SL-0101, SL 0101-1","RSK, AURKB, PIM1, PIM3","Other, kinases","RSK, AURKB, PIM1, PIM3",10459196,GDSC1,931,SANGER,495,nd
+SMER-3,561,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SNX-2112,564,Heat shock protein HSP90,NA,NA,328,SNX-2112,SNX 2112,HSP90,Protein stability and degradation,HSP90,24772860,GDSC1,908,MGH,495,nd
+Sorafenib,566,Vascular endothelial growth factor receptor 2;Beta platelet-derived growth factor receptor;Mast/stem cell growth factor receptor,P35968;P09619;P10721,Kinase,1085,Sorafenib,"Nexavar, 284461-73-0, BAY 43-9006","PDGFR, KIT, VEGFR, RAF","Other, kinases","PDGFR, KIT, VEGFR, RAF",216239,GDSC2,758,SANGER,495,nd
+spautin-1,568,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SR-II-138A,569,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SR1001,570,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SR8278,571,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+SRT-1720,572,NAD-dependent deacetylase sirtuin-1,Q96EB6,Carbon-nitrogen hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+staurosporine,573,Inhibitor of nuclear factor kappa B kinase beta subunit;Protein kinase C,O14920,Kinase,153,Midostaurin,"PKC412, benzoylstaurosporine, CGP-41251","PKC, PPK, FLT1, c-FGR, others",RTK signaling,"PKC, PPK, FLT1, c-FGR, others",several,GDSC1,889,MGH,495,nd
+STF-31,575,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+STF-62247,576,NA,NA,NA,258,STF-62247,STF62247,Autophagy inducer,Other,Autophagy inducer,704473,GDSC1,917,MGH,495,nd
+SU11274,577,Hepatocyte growth factor receptor,P08581,Kinase,285,SU11274,NA,MET,RTK signaling,MET,NA,GDSC1,925,MGH,495,nd
+SZ4TA2,580,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+T0901317,581,Oxysterols receptor LXR,NA,Nuclear hormone receptor,333,T0901317,"TO-901317, TO901317","LXR, FXR",Other,"LXR, FXR",447912,GDSC1,914,MGH,495,nd
+TAE684,584,Insulin receptor,P06213,Kinase,35,NVP-TAE684,"NVP-TAE 684, TAE684, TAE-684",ALK,RTK signaling,ALK,16038120,GDSC1,405,MGH,495,nd
+TG-100-115,593,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+TG-101348,594,Tyrosine-protein kinase JAK2,O60674,Kinase,306,Fedratinib,"TG101348, TG-101348, SAR302503, SAR-302503",JAK2,"Other, kinases",JAK2,16722836,GDSC1,921,MGH,495,nd
+thapsigargin,596,Sarcoplasmic/endoplasmic reticulum calcium ATPase,NA,Acid anhydrides hydrolase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+THZ-2-102-1,597,NA,NA,NA,346,THZ-2-102-1,NA,CDK7,Cell cycle,CDK7,none,GDSC1,897,MGH,495,nd
+THZ-2-49,598,NA,NA,NA,344,THZ-2-49,NA,CDK9,Cell cycle,CDK9,none,GDSC1,906,MGH,495,nd
+tigecycline,599,30S ribosomal subunit,F4NA87,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Tipifarnib,57,NA,NA,NA,204,Tipifarnib,Zarnestra,Farnesyl-transferase (FNTA),Other,Farnesyl-transferase (FNTA),159324,GDSC1,879,MGH,495,nd
+TKI258,602,FGF-3 receptor;Platelet-derived growth factor receptor,P22607,Kinase,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+TL-1-85,603,NA,NA,NA,261,TL-1-85,NA,TAK,"Other, kinases",TAK,none,GDSC1,919,MGH,495,nd
+TL-2-105,604,NA,NA,NA,211,TL-2-105,NA,not defined,Other,not defined,none,GDSC1,922,MGH,495,nd
+triazolothiadiazine,608,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+trifluoperazine,59,Calmodulin,P62158,Calmodulin-dependent secretion,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+triptolide,611,Nuclear factor NF-kappa-B,Q00653,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+TW 37,613,NA,NA,NA,1149,TW 37,"TW37, TW-37","BCL2, BCL-XL, MCL1",Apoptosis regulation,"BCL2, BCL-XL, MCL1",11455910,GDSC1,941,SANGER,495,nd
+UNC0321,615,euchromatic histone-lysine N-methyltransferase 2,Q96KQ7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+UNC0638,616,euchromatic histone-lysine N-methyltransferase 2;euchromatic histone-lysine N-methyltransferase 1,Q96KQ7;Q9H9B1,NA,1236,UNC0638,"UNC-0638, UNC 0683",G9a and GLP methyltransferases,Chromatin histone methylation,G9a and GLP methyltransferases,46224516,GDSC1,929,SANGER,495,nd
+VAF-347,619,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+valdecoxib,620,Prostaglandin G/H synthase 2,P35354,Oxidoreductases acting on paired donors,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+VER-155008,623,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+VNLG/124,624,NA,NA,NA,271,VNLG/124,HDAC inhibitor XV,"HDAC,RAR",Chromatin histone acetylation,"HDAC,RAR",24894414,GDSC1,915,MGH,495,nd
+vorapaxar,625,Thrombin receptor,P25116,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+Vorinostat,626,Histone deacetylase 1,Q13547,Carbon-nitrogen hydrolase,1012,Vorinostat,"Zolinza, SAHA, suberanilohydroxamic acid, suberoylanilide hydroxamic acid, MK-0683","HDAC inhibitor Class I, IIa, IIb, IV",Chromatin histone acetylation,"HDAC inhibitor Class I, IIa, IIb, IV",5311,GDSC2,759,SANGER,495,nd
+VU0155056,628,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+VX-680,630,Lck tyrosine kinase;Aurora kinase A;Aurora kinase B,P06239;O14965;Q96GD4,Kinase,1096,Tozasertib,"MK 0457,MK-0457,MK-045, VX-680 VX 680 VX-68","AURKA, AURKB, AURKC, others",Mitosis,"AURKA, AURKB, AURKC, others",5494449,GDSC2,49,SANGER,495,nd
+VX-702,631,Mitogen-activated protein kinase 14,Q16539,Kinase,1028,VX-702,"VX702, VX 702",p38,JNK and p38 signaling,p38,10341154,GDSC1,943,SANGER,495,nd
+WAY-362450,632,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+WH-4-023,633,Proto-oncogene tyrosine-protein kinase SRC;Lck tyrosine kinase,P12931;P06239,Kinase,56,WH-4-023,KIN001-112,"SRC, LCK","Other, kinases","SRC, LCK",11844351,GDSC1,397,MGH,495,nd
+WP1130,634,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+WZ-1-84,635,NA,NA,NA,59,WZ-1-84,KIN001-123,BMX,"Other, kinases",BMX,49821040,GDSC1,400,MGH,495,nd
+WZ3105,636,NA,NA,NA,252,WZ3105,NA,"SRC, ROCK2, NTRK2, FLT3, IRAK1, others",Other,"SRC, ROCK2, NTRK2, FLT3, IRAK1, others",none,GDSC1,921,MGH,495,nd
+WZ4002,637,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+WZ8040,638,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+XL-184,640,NA,NA,NA,249,Cabozantinib,"BMS-907351, XL-184, Cometriq","VEGFR, MET, RET, KIT, FLT1, FLT3, FLT4, TIE2,AXL",RTK signaling,"VEGFR, MET, RET, KIT, FLT1, FLT3, FLT4, TIE2,AXL",25102847,GDSC1,918,MGH,495,nd
+XL765,641,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+XMD11-85h,642,NA,NA,NA,1158,XMD11-85h,NA,"BRSK2, FLT4, MARK4, PRKCD, RET, SRPK1","Other, kinases","BRSK2, FLT4, MARK4, PRKCD, RET, SRPK1",none,GDSC1,495,SANGER,495,nd
+XMD13-2,643,NA,NA,NA,330,XMD13-2,NA,RIPK1,Apoptosis regulation,RIPK1,none,GDSC1,920,MGH,495,nd
+XMD14-99,644,NA,NA,NA,253,XMD14-99,NA,"ALK, CDK7, LTK, others","Other, kinases","ALK, CDK7, LTK, others",none,GDSC1,921,MGH,495,nd
+XMD15-27,645,NA,NA,NA,332,XMD15-27,NA,CAMK2,"Other, kinases",CAMK2,none,GDSC1,921,MGH,495,nd
+XMD8-85,646,NA,NA,NA,106,XMD8-85,ERK5-IN-1,"ERK5, BET",Other,"ERK5, BET",46844147,GDSC1,397,MGH,495,nd
+XMD8-92,647,"tyrosine kinase, non-receptor, 1;polo-like kinase 4;mitogen-activated protein kinase 7;doublecortin-like kinase 2",Q13470;O00444;Q13164;Q8N568,NA,1164,XMD8-92,XMD 8-92,MAPK7,ERK MAPK signaling,MAPK7,46843772,GDSC1,496,SANGER,495,nd
+Y-39983,649,Rho associated protein kinase,NA,NA,309,Y-39983,NA,ROCK,Cytoskeleton,ROCK,9810884,GDSC1,918,MGH,495,nd
+YK 4-279,650,NA,NA,NA,1239,YK-4-279,YK 4-279,RNA helicase A,Other,RNA helicase A,44632017,GDSC2,753,SANGER,495,nd
+YL54,651,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+YM-155,652,NA,NA,NA,1941,Sepantronium bromide,"YM155, YM-155, YM 155",BIRC5,Apoptosis regulation,BIRC5,11178236,GDSC2,753,SANGER,495,nd
+YM201636,653,NA,NA,NA,310,YM201636,"YM-201636, YM 201636",PIKFYVE,PI3K/MTOR signaling,PIKFYVE,9956222,GDSC1,919,MGH,495,nd
+Z-LLNle-CHO,654,NA,NA,NA,45,Z-LLNle-CHO,"Z-L-Norleucine-CHO, Gamma-Secretase Inhibitor 1",gamma-secretase,Other,gamma-secretase,16760646,GDSC1,400,MGH,495,nd
+Zebularine,655,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,nd
+ZG-10,656,NA,NA,NA,1161,ZG-10,NA,JNK1,JNK and p38 signaling,JNK1,none,GDSC1,495,SANGER,495,nd
+Zibotentan,657,Endothelin-1 receptor,P25101,GPCR rhodopsin,266,Zibotentan,"ZD4054, ZD-4054",Endothelin-1 receptor (EDNRA),Other,Endothelin-1 receptor (EDNRA),9910224,GDSC1,919,MGH,495,nd
+ZM-447439,658,Aurora kinase A,O14965,Kinase,1050,ZM447439,"ZM-447439, ZM 447439","AURKA, AURKB",Mitosis,"AURKA, AURKB",9914412,GDSC2,48,SANGER,495,nd
+(5Z)-7-Oxozeaenol,65,TAK,NA,NA,1242,(5Z)-7-Oxozeaenol,"5Z-7-Oxozeaenol, LL-Z1640-2",TAK1,"Other, kinases",TAK1,9863776,GDSC1,914,SANGER,495,probe
+BX-912,163,Vascular endothelial growth factor receptor 2;Glycogen synthase kinase-3 beta;Cell division protein kinase 2;3-phosphoinositide dependent protein kinase-1;Serine/threonine-protein kinase Chk1;Protein kinase A,P35968;P49841;P24941;O15530;O14757;Q56921,Kinase,222,BX-912,NA,PDK1 (PDPK1),Metabolism,PDK1 (PDPK1),11754511,GDSC1,921,MGH,495,probe
+Camptothecin,168,DNA topoisomerase I;Toposisomerase-1,Q969P6;P11387,DNA topoisomerase,1494,SN-38,"7-Ethyl-10-Hydroxy-Camptothecin, SN 38",TOP1,DNA replication,TOP1,104842,GDSC1,954,SANGER,495,probe
+Cyclopamine,217,smoothened receptor,Q99835,GPCR frizzled,17,Cyclopamine,NA,SMO,Other,SMO,several,GDSC1,397,MGH,495,probe
+erastin,238,Histamine H1 receptor,P35367,GPCR rhodopsin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+GSK-1904529A,272,IGF,NA,NA,1093,GSK1904529A,"GSK-1904529A, GSK 1904529A","IGF1R, IR",IGF1R signaling,"IGF1R, IR",25124816,GDSC2,802,SANGER,495,probe
+GSK-J4,275,JMJD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+GSK269962A,285,Rho-associated protein kinase 1;Rho associated protein kinase 2,Q13464;O75116,Kinase,1192,GSK269962A,GSK 269962A,"ROCK1, ROCK2",Cytoskeleton,"ROCK1, ROCK2",16095342,GDSC2,49,SANGER,495,probe
+I-BET151,304,Bromodomain-containing protein 2;Bromodomain-containing protein 4;Bromodomain-containing protein 3,P25440;O60885;Q15059,Bromodomain,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+IOX2,311,HIF prolyl hydroxylase-2;lysine (K)-specific demethylase 5C;lysine (K)-specific demethylase 2A,Q9GZT9;P41229;Q9Y2K7,Oxidoreductases acting on paired donors,1230,IOX2,"IOX-2, IOX 2, AK176060",EGLN1,Other,EGLN1,54685215,GDSC1,928,SANGER,495,probe
+JQ12,331,BET,NA,NA,164,JQ12,NA,"HDAC1, HDAC2",Chromatin histone acetylation,"HDAC1, HDAC2",none,GDSC1,882,MGH,495,probe
+KU-60019,352,ATM serine/threonine kinase,Q13315,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+MST-312,405,Telomerase,NA,NA,1930,Telomerase Inhibitor IX,"MST-312, MST 312, MST312",Telomerase,Genome integrity,Telomerase,10385095,GDSC2,753,SANGER,495,probe
+Nutlin-3,440,Cellular tumor antigenp53;mRNA of Human mdm2,P04637;Q00987,Carbon-nitrogen ligase,1047,Nutlin-3a (-),NA,MDM2,p53 pathway,MDM2,11433190,GDSC2,774,SANGER,495,probe
+PF-4800567 hydrochloride,478,CK,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+PFI-1,483,Bromodomain-containing protein 4,O60885,Bromodomain,1219,PFI-1,NA,BRD4,Chromatin other,BRD4,71271629,GDSC1,929,SANGER,495,probe
+S-Trityl-L-cysteine,530,Eg,NA,NA,41,S-Trityl-L-cysteine,"NSC 83265, Tritylcysteine",KIF11,Mitosis,KIF11,76044,GDSC1,399,MGH,495,probe
+SGC0946,548,DOT1L,Q8TEK3,Methyltransferase superfamily,1264,SGC0946,NA,DOT1L,Chromatin histone methylation,DOT1L,56962337,GDSC1,910,SANGER,495,probe
+StemRegenin 1,574,AHR,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+TGX221,595,Phosphoinositide 3 kinase;PI3K beta,P48736;P42338,Kinase,94,TGX221,"TGX-221, Tgx 221",PI3Kbeta,PI3K/MTOR signaling,PI3K,9907093,GDSC1,399,MGH,495,probe
+TPCA-1,607,Inhibitor of nuclear factor kappa-B kinase,Q14164,Kinase,305,TPCA-1,NA,IKK2,"Other, kinases",IKK2,9903786,GDSC1,919,MGH,495,probe
+tubastatin A,612,HDAC,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,probe
+UNC1215,618,l(3)mbt-like 3 (Drosophila),Q96JM7,NA,1262,UNC1215,UNC-1215,L3MBTL3,Chromatin other,L3MBTL3,57339144,GDSC1,911,SANGER,495,probe
+VX-11e,629,ERK,NA,NA,2096,VX-11e,"VX11e, VX11e",ERK2,ERK MAPK signaling,ERK2,11634725,GDSC2,746,SANGER,495,probe
+XAV-939,639,Tankyrase,NA,NA,1268,XAV939,"NVP-XAV939, XAV-939, XAV 939","TNKS1, TNKS2",WNT signaling,"TNKS1, TNKS2",2726824,GDSC2,729,SANGER,495,probe

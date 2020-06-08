@@ -1,0 +1,209 @@
+#roxygen description
+#' @name  OptimiseMarkers
+#' @export OptimiseMarkers
+#' @title  Optimise marker set for machine learning
+#' @usage OptimiseMarkers(EMSRoutput = EMSRout, drug = "ABT-119", df_response = df.aac, df_input = df.phos)
+#' @param EMSRoutput output of GenerateEMSR function (get_limma must be False)
+#' @param drug Drug which the markers will be generated for
+#' @param df_response Dataframe with rownames as cell lines and drug responses
+#' @param df_input = Input dataset, rownames must be variables
+#' @param nfolds number of points of analysis to do to optimise marker lenghts
+#' @param var1 Variable to use for input variable sorting can be  n_pvalue_cutoff, n_increase, n_decrease, ratio, n_increase_pfilt, n_decrease_pfilt, ratio_pfilt, mean_fold, mean_fold_pfilt, mean_
+#' @param var2 = Second variable to sort input variables
+#' @param sens_class variable to use to classify variables as a marker of sensitivity or resistance (require negative values) e.g mean_fold and ratio
+#' @param computational_load proportion of cores to use for analysis
+#' @param maxmarker_res The maximum number of resistant markers to be considered. If left NULL the total number of resistant markers will be used.
+#' @param maxmarker_sens The maximum number of sensitive markers to be considered. If left NULL the total number of sensitive markers will be used.
+#' @param graph if True a graph of pvalue spread across marker combinations will be generated
+
+
+OptimiseMarkers <- function(EMSRoutput,
+                            drug,
+                            df_response,
+                            df_input,
+                            scale_input = F,
+                            nfolds=50,
+                            maxmarker_res = NULL,
+                            maxmarker_sens = NULL,
+                            var1 = "ratio",
+                            var2 = "mean_fold",
+                            sens_class="ratio",
+                            computational_load = NULL,
+                            graph = F){
+
+  if("tidyverse" %in% (.packages())==FALSE){library(tidyverse)}
+  if("foreach" %in% (.packages())==FALSE){library(foreach)}
+  if("doParallel" %in% (.packages())==FALSE){library(doParallel)}
+  if("svglite" %in% (.packages())==FALSE){library(svglite)}
+
+
+  if(scale_input == T){
+    cols <- colnames(df_input)
+    df_input <- apply(df_input, 1, FUN = function(x){scale(x, center = T, scale = T)}) %>% t() %>% data.frame()
+    colnames(df_input) <- cols
+  }
+
+
+  #format response data
+  df_response <- df_response[RemoveRepeatNo(colnames(df_input)),drug,drop = F]
+  rownames(df_response) <- colnames(df_input)
+
+  #alter pvalues so they increase with significance
+  EMSRoutput$mean_p <- -log(EMSRoutput$mean_p)
+
+  #build dataframe of sensitive markers
+  df_sens_m <- EMSRoutput[EMSRoutput[,sens_class]>0,]
+  df_sens_m <- df_sens_m[df_sens_m$ratio > mean(df_sens_m[,var1], na.rm = T),]
+  df_sens_m <- df_sens_m[order(df_sens_m[,var1], df_sens_m[,var2], decreasing = T),c("Variable",var1,var2)]
+
+  #alter resistant fold values so they increase with significance
+  df_res_m <- EMSRoutput[EMSRoutput[,sens_class]<0,]
+  df_res_m$ratio <-(df_res_m$ratio)*-(1)
+  df_res_m$ratio_pfilt <- (df_res_m$ratio_pfilt)*-(1)
+  df_res_m$mean_fold <-(df_res_m$mean_fold)*-(1)
+  df_res_m$mean_fold_pfilt <-(df_res_m$mean_fold)*-(1)
+
+  #build dataframe of resistant markers
+  df_res_m <- df_res_m[df_res_m$ratio > mean(df_res_m[,var1], na.rm = T),]
+  df_res_m <- df_res_m[order(df_res_m[,var1], df_res_m[,var2], decreasing = T),c("Variable",var1,var2)]
+
+  #identify testing paramaters for marker lengths
+  if(is.null(maxmarker_res)){maxmarker_res <- nrow(df_res_m)}
+  if(is.null(maxmarker_sens)){maxmarker_sens <- nrow(df_sens_m)}
+
+  sens_test <- seq(from = 5, to = maxmarker_sens, by = round(maxmarker_sens/nfolds, 0)) #%>% list()
+  res_test <- seq(from = 5, to = maxmarker_res, by = round(maxmarker_res/nfolds,0)) #%>% list()
+
+  print("generating markers lists")
+  #generate list of markers using lengths of sens_test and res_test
+  sens_markers <- sapply(sens_test, FUN = function(x){paste(df_sens_m[1:x, "Variable"], collapse = "-")}) %>% data.frame(stringsAsFactors = F)
+  res_markers <- sapply(res_test, FUN = function(x){paste(df_res_m[1:x, "Variable"], collapse = "-")}) %>% data.frame(stringsAsFactors = F)
+
+  #build tuning grid for foreachfunction
+  grid <- expand.grid(1:nrow(sens_markers), 1:nrow(res_markers))
+
+  #Internal function for generating marker distances
+
+  .GetDistances <- function(i){
+    x <- grid[i,"Var1"]
+    y <- grid[i,"Var2"]
+
+    sens_m <- sens_markers[x,] %>% strsplit("-") %>% unlist()
+    res_m <- res_markers[y,] %>% strsplit("-") %>% unlist()
+
+    sens <- df_input[sens_m,]
+    s_med <- apply(sens, 2, FUN = function(x)(median(x, na.rm = T)))
+    s_q3 <- apply(sens, 2, FUN = function(x)(quantile(x, probs = 0.75, na.rm = T)))
+
+    res <- df_input[res_m,]
+    r_med <- apply(res, 2, FUN = function(x)(median(x, na.rm = T)))
+    r_q3 <- apply(res, 2, FUN = function(x)(quantile(x, probs = 0.75, na.rm = T)))
+
+    D <- data.frame((s_med - r_med)+(s_q3 - r_q3))
+    colnames(D) <- i
+    return(D)
+  }
+
+  #Internal function of analysing marker distance correlations with drug sensitivity
+   .SpearmanMarkerAnalysis <- function(i){
+     df_d <- df_dist[,i, drop = F]
+     df <- merge.data.frame(df_d, df_response, by = "row.names")
+     colnames(df) <- c("cells", "D", "AAC")
+     cc <- cor.test(df$D,df$AAC,method = "spearman", complete.cases=TRUE)
+     out <- data.frame("pvalue" = cc$p.value,"estimate" = cc$estimate)
+     out$rep <- c(1:nrow(out))
+     return(out)
+     }
+
+  if(is.null(computational_load)){
+    #get distances using marker lists on one core
+    df_dist <- foreach(i = rownames(grid),
+                       .inorder = T,
+                       .combine = "cbind",
+                       .packages = "dplyr")%do%{
+                         out <- .GetDistances(i) %>% data.frame(stringsAsFactors = F)
+                         print(paste("Distances complete for comparison: ", i,"/", nrow(grid), sep = ""))
+                         return(out)
+                       }
+
+
+
+    print("begining spearman correlation analysis of marker groups")
+
+    #analyse correlation between distances and drug sensitivity using spearman ranking on multiple cores
+    marker_analysis <- foreach(i = 1:ncol(df_dist),
+                               .inorder = T,
+                               .combine = "rbind",
+                               .packages = c("dplyr"))%do%{
+                                 out <- .SpearmanMarkerAnalysis(i)
+                                 print(paste("Spearman analysis complete for comparison: ", i,"/", ncol(df_dist), sep = ""))
+                                 return(out)
+
+                                 }
+    }else{
+      #active relevant cores
+      cores <- round((computational_load * parallel::detectCores()), 0)
+      registerDoParallel(cores = cores)
+      print(paste("running on", cores, "cores"))
+      print("calculating distances")
+
+      #get distances using marker lists on multiple cores
+      df_dist <- foreach(i = rownames(grid),
+                         .combine = "cbind",
+                         .inorder = T,
+                         .packages = "dplyr")%dopar%{
+                           out <- .GetDistances(i) %>% data.frame(stringsAsFactors = F)
+                           return(out)
+                         }
+      print("begining spearman correlation analysis of marker groups")
+
+
+      #analyse correlation between distances and drug sensitivity using spearman ranking on multiple cores
+      marker_analysis <- foreach(i = 1:ncol(df_dist),
+                                 .combine = "rbind",
+                                 .inorder = T,
+                                 .packages = c("dplyr"))%do%{
+                                   out <- .SpearmanMarkerAnalysis(i)
+                                   }
+      doParallel::stopImplicitCluster()
+      }
+   #get numbers of markers used for each comparison
+   marker_analysis$rep <- 1:nrow(marker_analysis)
+   marker_analysis$n_sens <- lapply(marker_analysis$rep, FUN = function(x){sens_test[grid[x, "Var1"]]})%>% unlist() %>% as.double()
+   marker_analysis$n_res <- lapply(marker_analysis$rep, FUN = function(x){res_test[grid[x, "Var2"]]})%>% unlist()%>% as.double()
+
+   if(graph == T){
+      #Generate pdf of pvalue distribution across variable combinations
+      pp <- ggplot(marker_analysis, aes(x = n_res, y = n_sens, col = -log(pvalue)))+
+        scale_color_gradient(low="white", high = "red")+
+        geom_point(size=2, shape = "square")+
+        xlab("Resistant marker length")+
+        ylab("Sensitive marker length")+
+        theme_classic()
+      ggsave(plot = pp, filename = paste(var1, "and", var2, "filtered", drug, "markers.pdf", sep = "_"),
+             device = "pdf",
+             units = "cm",
+             dpi = 800,
+             height = 20, width = 20)
+      }
+   #identify optimal marker length combination
+    optimal <- marker_analysis[marker_analysis$pvalue == min(marker_analysis$pvalue),]
+
+    #if multiple combinations generate optimal marker combinations use the one with the fewest total markers
+    if(nrow(optimal)>1){
+      tot <- optimal$n_sens+optimal$n_res
+      optimal <- optimal[tot%in%min(tot),]
+      }
+
+    #generate marker output
+    print("analysis complete")
+    out <- data.frame("drug" = drug,
+                      "m_sens" = optimal$n_sens,
+                      "m_res" = optimal$n_res,
+                      "senstive" = sens_markers[grid[optimal$rep, "Var1"],],
+                      "resistant" = res_markers[grid[optimal$rep, "Var2"],],
+                      "var1" = var1,
+                      "var2" = var2,
+                      "class_seperator" = sens_class)
+   return(out)
+}

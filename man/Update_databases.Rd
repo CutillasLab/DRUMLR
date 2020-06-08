@@ -2,6 +2,7 @@
 % Please edit documentation in R/Update_databases.R
 \name{Update_databases}
 \alias{Update_databases}
+\alias{Update_Databases}
 \title{Update Internal Databases for KSEA}
 \usage{
 Update_databases()

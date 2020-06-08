@@ -8,7 +8,7 @@ FilterSensitivity(
   sensitivity_database = NULL,
   cell_annotations = NULL,
   cell_lines = NULL,
-  tissue_type = c("haematopoietic_and_lymphoid_tissue", "liver", "oesophagus"),
+  tissue_type = c("AML", "Hepatocellular", "Oesophagus"),
   iqr_tolerance = 0.04,
   n_coverage = 0.8
 )
