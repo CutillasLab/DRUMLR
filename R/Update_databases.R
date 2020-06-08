@@ -1,70 +1,68 @@
 # roxygen description
 #' @title Update Internal Databases for KSEA
 #' @name Update_databases
-#' @export Update_databases
 #' @usage  Update_databases()
+#' @export Update_databases
 #' @description Update databases from databases files folder
-#' @param datadir database directory which leads to database_paths.csv file
-#' }
 
-Update_databases <- function(datadir= "D:/OneDrive - Queen Mary, University of London/r_packages/KSEAR-v2_annotated/databases/"){
-  require(dplyr)
-  require(usethis)
-  load_database<- function(database){
-    path <- read.csv(paste(datadir,"database_paths.csv",sep =""), row.names = 1, stringsAsFactors = F)[database, "filename"] %>% as.character()
-    path <-paste(datadir,path,sep ="")
-    db <- read.csv(path, stringsAsFactors = F) %>% data.frame(stringsAsFactors = F)
+
+Update_Databases <- function(Inputdir="Input_data"){
+
+  require("dplyr")
+  require("readxl")
+  #Input Databases
+
+  .LoadDatabase<- function(database){
+
+    path <- paste(Inputdir,"/",database ,sep ="/")
+
+    file_type <- substr(database, start = nchar(database)-3, stop = nchar(database))
+
+    if(file_type == "xlsx"){
+      db <- readxl::read_excel(path=path, sheet="ppIndex")%>% data.frame(row.names = 1, stringsAsFactors = F)
+    }else if(file_type==".csv"){
+      db <- read.csv(file = path, stringsAsFactors = F) %>% data.frame(row.names = 1, stringsAsFactors = F)
+    }
     return(db)
   }
 
-  ctams <- load_database("ctams")
-  edges <- load_database("edges")
-  function. <-load_database("function.")
-  location <- load_database("location")
-  nci <- load_database("nci")
-  PDBmodules <- load_database("PDBmodules")
-  pdts <- load_database("pdts")
-  pdts.function <- load_database("pdts.function")
-  pdts.location <- load_database("pdts.location")
-  pdts.nci <- load_database("pdts.nci")
-  pdts.process <- load_database("pdts.process")
-  pdts.reactome <- load_database("pdts.reactome")
-  process <- load_database("process")
-  psite <- load_database("psite")
-  reactome <- load_database("reactome")
-  signor <- load_database("signor")
-  PDBaac <- henryspackage::LoadData("PDBaac")
-  PDBphos <- henryspackage::LoadData("PDBphos")
-  PDBprot <- henryspackage::LoadData("PDBprot")
-  PDBrna <- henryspackage::LoadData("PDBrna")
-  PDBcellinfo <- henryspackage::LoadData("PDBcellinf")[,c("cell.name", "unique.tissue")]
-  PDBcellinfo$cell.name <- make.names(PDBcellinfo$cell.name, unique = T)
-  PDBaac$cell.name <- make.names(PDBaac$cell.name, unique = T)
+  files <- list.files(Inputdir)
+  DRUMLphos <- .LoadDatabase(files[2])
+  DRUMLprot <- .LoadDatabase(files[3])
+  DRUMLprot <- DRUMLprot[, !colnames(DRUMLprot)%in%c("N.A",	"Name",	"Accessions",	"Mascot.Score",	"No.Unique.Peptides",	"No.Pept.Identifications")]
+  DRUMLaac <- .LoadDatabase(files[4]) %>% t() %>% data.frame(stringsAsFactors = F)
+  DRUMLdruginfo <- .LoadDatabase(files[5])
+  DRUMLcellinfo <- .LoadDatabase(files[6])
+  #Marker Databases
 
-  usethis::use_data(ctams,
-                    edges,
-                    function.,
-                    location,
-                    nci,
-                    PDBmodules,
-                    pdts,
-                    pdts.function,
-                    pdts.location,
-                    pdts.nci,
-                    pdts.process,
-                    pdts.reactome,
-                    process,
-                    psite,
-                    reactome,
-                    signor,
-                    PDBaac,
-                    PDBphos,
-                    PDBprot,
-                    PDBrna,
-                    PDBcellinfo,
-                    internal = T, overwrite = T, compress = "xz")
+  .ReadMarker <-function(sheet){
+    path = paste(Inputdir, files[7], sep = "/")
+    out <- readxl::read_excel(path = path, sheet = sheet) %>% data.frame(stringsAsFactors = F, row.names = 1)
+    return(out)
+  }
+
+  phospho_aml_markers <- .ReadMarker("phospho aml")
+  phospho_solid_markers <- .ReadMarker("phospho solid")
+  prot_aml_markers <- .ReadMarker("prot aml")
+  prot_solid_markers <- .ReadMarker("prot solid")
+  rna_aml_markers <- .ReadMarker("rna aml")
+  rna_solid_markers <- .ReadMarker("rna solid")
+
+  usethis::use_data(phospho_aml_markers,
+                    phospho_solid_markers,
+                    prot_aml_markers,
+                    prot_solid_markers,
+                    rna_aml_markers,
+                    rna_solid_markers,
+                    DRUMLaac,
+                    DRUMLphos,
+                    DRUMLprot,
+                    DRUMLcellinfo,
+                    DRUMLdruginfo,
+                    internal = T,
+                    overwrite = T,
+                    compress = "xz")
 
   print("all databases updated")
 }
 
-Update_databases()

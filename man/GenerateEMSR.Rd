@@ -7,16 +7,13 @@
 GenerateEMSR(
   df_input = NULL,
   df_response = NULL,
-  drug = "barasertib",
-  resampling.times = 10,
+  drug,
   p.cutoff = 0.05,
-  direction_percentage = 0.8,
   fold.cut.off = 0.8,
-  marker.n.cutoff = 0.3,
-  save_xlsx = F,
-  save_name = NULL,
-  computational_load = NULL,
-  pfilt = T
+  resampling.times = 5,
+  return_limma = F,
+  scale_input = F,
+  computational_load = NULL
 )
 }
 \arguments{

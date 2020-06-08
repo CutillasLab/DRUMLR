@@ -2,18 +2,18 @@
 % Please edit documentation in R/DrugMarkerEnrichment.R
 \name{DrugMarkerEnrichment}
 \alias{DrugMarkerEnrichment}
-\title{A score of marker ratios}
+\title{Generate D values from input data and marker database}
 \usage{
-MarkerZscores(df, marker_database = "aml.markers", scale = T)
+DrugMarkerEnrichment(df = df.ppindex, marker_database = "aml_prot_markers", scale = T, output = c("Distance", "zscore"))
 }
 \arguments{
 \item{df}{dataframe of peptide intensities cant be used for DMSO controls yet}
 
-\item{scale}{if TRUE data will be scaled before putting in ksea}
+\item{scale}{if TRUE data will be scaled before putting Drug Enrichment}
 
-\item{marker_database}{markers database to be used}
+\item{marker_database}{markers database to be used can be aml_phos_markers, all_phos_markers, solid_phos_markers, aml_prot_markers, all_prot_markers, solid_prot_markers, aml_rna_markers, all_rna_markers or solid_rna_markers}
 
-\item{input}{datatype input can be phospho or prot}
+\item{output}{The output metric you want to use can be "Distance" or "zscore"}
 }
 \description{
 Get zscores between sensitive and resistant markers
