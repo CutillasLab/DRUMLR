@@ -8,6 +8,7 @@
 
 
 RemoveRepeatNo <- function(x, repeatseperator ="__"){
+  if("dplyr" %in% (.packages())==FALSE){library(dplyr)}
   out <- lapply(x, FUN = function(x){strsplit(x, repeatseperator)[[1]][[1]]})%>% unlist()
   return(out)
 }

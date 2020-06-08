@@ -7,6 +7,8 @@
 #' @param database database to draw into environment
 
 GetIntMarkerDB <- function(database){
+  if("dplyr" %in% (.packages())==FALSE){library(dplyr)}
+
   if(database == "aml_phos_markers"){out <- DRUMLR:::aml_phos_markers %>% data.frame(row.names = 1, stringsAsFactors = F)
   }else if(database == "all_phos_markers"){out <- DRUMLR:::all_phos_markers %>% data.frame(row.names = 1, stringsAsFactors = F)
   }else if(database == "solid_phos_markers"){out <- DRUMLR:::solid_phos_markers %>% data.frame(row.names = 1, stringsAsFactors = F)

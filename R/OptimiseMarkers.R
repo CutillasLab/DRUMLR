@@ -35,6 +35,8 @@ OptimiseMarkers <- function(EMSRoutput,
   if("foreach" %in% (.packages())==FALSE){library(foreach)}
   if("doParallel" %in% (.packages())==FALSE){library(doParallel)}
   if("svglite" %in% (.packages())==FALSE){library(svglite)}
+
+
   if(scale_input == T){
     cols <- colnames(df_input)
     df_input <- apply(df_input, 1, FUN = function(x){scale(x, center = T, scale = T)}) %>% t() %>% data.frame()

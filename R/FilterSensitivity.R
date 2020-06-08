@@ -15,7 +15,7 @@ FilterSensitivity <- function(sensitivity_database = NULL,
                              tissue_type = c("AML", "Hepatocellular", "Oesophagus"),
                              iqr_tolerance = 0.04,
                              n_coverage = 0.8){
-  require(dplyr)
+  if("dplyr" %in% (.packages())==FALSE){library(dplyr)}
 
   if(is.null(cell_annotations)){cell_annotations <- DRUMLR:::DRUMLcellinfo %>% data.frame()}
   if(is.null(sensitivity_database)){sensitivity_database <- DRUMLR:::DRUMLaac %>% data.frame()}
