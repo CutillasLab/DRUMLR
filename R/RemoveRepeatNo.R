@@ -7,8 +7,16 @@
 #' @param repeatseperator The string which separates cell name from repeat number. For DRUML data "__" is used as default.
 
 
-RemoveRepeatNo <- function(x, repeatseperator ="__"){
-  if("dplyr" %in% (.packages())==FALSE){library(dplyr)}
-  out <- lapply(x, FUN = function(x){strsplit(x, repeatseperator)[[1]][[1]]})%>% unlist()
+RemoveRepeatNo <- function(x, repeatseperator = "__") {
+  if ("dplyr" %in% (.packages()) == FALSE) {
+    library(dplyr)
+  }
+  out <-
+    lapply(
+      x,
+      FUN = function(x) {
+        strsplit(x, repeatseperator)[[1]][[1]]
+      }
+    ) %>% unlist()
   return(out)
 }

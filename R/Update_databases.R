@@ -2,8 +2,8 @@
 #' @title Update Internal Databases for KSEA
 #' @name Update_databases
 #' @usage  Update_databases()
-#' @export Update_databases
 #' @description Update databases from databases files folder
+
 
 
 Update_Databases <- function(Inputdir="Input_data"){
