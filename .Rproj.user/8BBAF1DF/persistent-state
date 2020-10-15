@@ -1,8 +1,0 @@
-build-last-errors="[]"
-build-last-errors-base-dir=""
-build-last-outputs="[{\"type\":0,\"output\":\"==> roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))\\n\\n\"},{\"type\":2,\"output\":\"Error in if (any(mismatch <- res != res2)) { : \\r\\n  missing value where TRUE/FALSE needed\\r\\nCalls: suppressPackageStartupMessages ... idesc_create -> idesc_create_file -> idesc_create_text -> read_dcf\\r\\nExecution halted\\r\\n\"},{\"type\":2,\"output\":\"\\nExited with status 1.\\n\\n\"}]"
-compile_pdf_state="{\"tab_visible\":false,\"running\":false,\"target_file\":\"\",\"output\":\"\",\"errors\":[]}"
-files.monitored-path=""
-find-in-files-state="{\"handle\":\"\",\"input\":\"\",\"path\":\"\",\"regex\":false,\"ignoreCase\":false,\"results\":{\"file\":[],\"line\":[],\"lineValue\":[],\"matchOn\":[],\"matchOff\":[],\"replaceMatchOn\":[],\"replaceMatchOff\":[]},\"running\":false,\"replace\":false,\"preview\":false,\"gitFlag\":false,\"replacePattern\":\"\"}"
-imageDirtyState="1"
-saveActionState="-1"
