@@ -1,0 +1,30 @@
+Package: DRUMLR
+Type: Package
+Title: Drug Sensitivity Ranking Using Machine Learning R Package 
+Version: 0.1.0
+Authors@R: c(person("Henry", "Gerdes", role = c("aut", "cre"),
+                     email = "h.gerdes@qmul.ac.uk"),
+              person("Pedro", "Cutillas", role =c("aut", "cre"), 
+              email = "p.cutillas@qmul.ac.uk"))
+Author: Pedro Cutillas ["aut", "cre"],
+ Henry Gerdes ["aut", "cre"]
+Maintainer: Henry Gerdes <h.gerdes@qmul.ac.uk>
+Description: Functions required to generate DRUML drug sensitivity prediction models.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: FALSE
+Imports: 
+  dplyr,
+  foreach,
+  doParallel,
+  limma, 
+  caret,
+  h2o,
+  Cubist,
+  pls,
+  glmnet,
+  kernlab,
+  randomForest
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
