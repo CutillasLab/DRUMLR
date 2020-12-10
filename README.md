@@ -12,7 +12,7 @@ The copyright holder for these data is the author. This resource is made availab
 ### for private use
 download the DRUMLR_0.1.0.tar.gz file and run the following code, replacing path with your local path to the downloaded DRUMLR_0.1.0.tar.gz (usually "C:/Users/Username/Downloads/DRUMLRv01_0.1.0.tar.gz")
 
-install.packages(path_to_, 
+install.packages(path, 
                  repos = NULL, 
                  type ="source")
 
