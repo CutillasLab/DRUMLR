@@ -21,16 +21,15 @@ To install the package install the devtools package and run:
 devtools::install_github(CutillasLab/DRUMLR)
 
 ## Code dependencies 
-dplyr (1.0.2)
-foreach (1.5.1)
-doParallel (1.0.16)
-limma (3.42.2)
-caret (6.0-86)
-h2o (3.32.0.1)*
-Cubist (0.2.3)
-pls(2.7-3)
-glmnet (4.0-2)
-kernlab (0.9-29)
-randomForest (4.6-14)
-
+dplyr (1.0.2)\
+foreach (1.5.1)\
+doParallel (1.0.16)\
+limma (3.42.2)\
+caret (6.0-86)\
+h2o (3.32.0.1)*\
+Cubist (0.2.3)\
+pls(2.7-3)\
+glmnet (4.0-2)\
+kernlab (0.9-29)\
+randomForest (4.6-14)\
 \* this package requires up to date java and H2O packages to operate, however, DRUMLR is written with backwards compatibility for H2O. 
