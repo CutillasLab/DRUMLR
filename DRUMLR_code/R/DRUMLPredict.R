@@ -12,8 +12,7 @@ PredictDRUML <- function(df_distance,
                          drugs="all",
                          models= "all",
                          models_dir,
-                         path_file = NULL,
-                         computational_load = NULL){
+                         path_file = NULL){
 
   if("tidyverse" %in% (.packages())==FALSE){library(dplyr)}
   if("caret" %in% (.packages())==FALSE){library(caret)}
@@ -21,24 +20,12 @@ PredictDRUML <- function(df_distance,
   if("doParallel" %in% (.packages())==FALSE){library(doParallel)}
   if("foreach" %in% (.packages())==FALSE){library(foreach)}
 
-  #get number of cores for parallel processing
-  if(!is.null(computational_load)) {
-    cores <-
-      as.integer((computational_load * parallel::detectCores()), length = 1)
-
-  }else{
-    cores <- 1
-  }
-  registerDoParallel(cores = cores)
-  print(paste("running on", cores, "cores"))
-
-  #find path file if none is specified
-
   if(is.null(path_file)){
     path_file <- list.files(models_dir) %>% grep(pattern = "model_paths.csv", fixed = T, value = T)
     path_file <- read.csv(paste(models_dir, path_file, sep = "/"),row.names = 1, stringsAsFactors = F)
 
   }
+
 
   if(models == "all"){
     models <- c("bayes", "cubist", "nnet", "pcr", "pls", "rf", "svm", "dl")
@@ -69,7 +56,7 @@ PredictDRUML <- function(df_distance,
   df_distance <- df_distance %>% t() %>% data.frame()
 
   #predict by drawing models into environment sequentially
-  predictions_all <- foreach(i = models_all$model_path, .combine = "cbind")%dopar%{
+  predictions_all <- foreach(i = models_all$model_path, .combine = "cbind")%do%{
     model <- readRDS(paste(models_dir, i, sep = "/"))
     mod_input <- dist_list[[i]]
     df_mod <- DRUMLR::MinMaxNormalise(df_distance[,mod_input],.margin=2)
@@ -79,16 +66,10 @@ PredictDRUML <- function(df_distance,
     return(predicted_vals)
   }
 
-  #terminate doparallel cluster
-  doParallel::stopImplicitCluster()
-
-
   #predict for dl models drawing models into environment sequentially
-
   #initiate h2o and make df_distance a h2o frame
   if("dl" %in% models){
-    #run h2o on the same numer of cores as doparallel
-    h2o.init(nthreads = cores)
+    h2o.init()
     predictions_dl <- foreach(i = models_dl$model_path, .combine = "cbind")%do%{
       #get model info and filter and scale df
       mod_imp <- dist_list[[i]]
