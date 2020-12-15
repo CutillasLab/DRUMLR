@@ -470,11 +470,15 @@ df_distance &lt;- DRUMLR::DrugMarkerEnrichment(df = df_input, marker_database = 
 <div id="drug-sensitivity-prediction" class="section level3">
 <h3>Drug sensitivity prediction</h3>
 <p>To predict Drug Sensitivity you will need to state the path to the folder containing all of the Models this will usually be “C:/users/Username/Downloads/Models”. In this example we are predicting BYL-719 sensitivity. The other drugs sensitivities which can be measured in this package can be found in the DRUMLRv01:::drug_info dataframe.</p>
-<pre class="r"><code># To predict Drug Sensitivity you will need to state the path to the folder
-# containing all of the Models
+<pre class="r"><code>#To predict Drug Sensitivity you will need to state the path to the folder containing all of the Models 
 
-predictions &lt;- DRUMLR::PredictDRUML_example(df_distance = df_distance, input_type = &quot;phospho&quot;, 
-    cancer_type = &quot;aml&quot;, models = c(&quot;pcr&quot;, &quot;pls&quot;, &quot;rf&quot;), drugs = &quot;Cytarabine&quot;, models_dir = &quot;Example&quot;)</code></pre>
+predictions &lt;- DRUMLR::PredictDRUML_example(df_distance = df_distance,
+                         input_type = &quot;phospho&quot;, 
+                         cancer_type = &quot;aml&quot;, 
+                         models = c(&quot;pcr&quot;, &quot;pls&quot;, &quot;rf&quot;),
+                         drugs = &quot;Cytarabine&quot;,
+                         models_dir = &quot;Example_Models&quot;
+                         )</code></pre>
 </div>
 <div id="rearrange-prediction-output-for-graphs" class="section level3">
 <h3>Rearrange Prediction output for graphs</h3>
