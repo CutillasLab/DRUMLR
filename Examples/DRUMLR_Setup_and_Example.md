@@ -110,11 +110,11 @@ df_prediction2$D <- df_distance["Cytarabine", df_prediction2$Vial.ID] %>% as.vec
 Scatter graphs demonstrating the correlation between predicted AAC and D
 values against patient survival rate in years.
 
-![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->
+![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-7-3.png)<!-- -->
 
 ### Make Kaplain Meyer classifications
 
 Patients were split into “high” and “low” groups using mean AAC and D
 values.
 
-![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
+![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](https://github.com/CutillasLab/DRUMLR/tree/master/Examples/DRUMLR_Setup_and_Example_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
