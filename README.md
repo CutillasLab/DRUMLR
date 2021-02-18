@@ -11,7 +11,7 @@ The copyright holder for these data is the author. This resource is made availab
 ## How to install
 
 To install the package install the devtools package and run:
-devtools::install_github("CutillasLab/DRUMLR/DRUMLR_code")
+devtools::install_github(repo="CutillasLab/DRUMLR", subdir="DRUMLR_code")
 
 ## Code dependencies 
 dplyr (1.0.2)\
