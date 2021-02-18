@@ -18,7 +18,7 @@ install.packages(path,
 
 ### when the package is public
 To install the package install the devtools package and run:
-devtools::install_github(CutillasLab/DRUMLR)
+devtools::install_github(CutillasLab/DRUMLR/DRUMLR_0.1.0.tar.gz)
 
 ## Code dependencies 
 dplyr (1.0.2)\
