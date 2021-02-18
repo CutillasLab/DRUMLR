@@ -9,16 +9,9 @@ Henry Gerdes 1, Pedro Casado 1, Arran Dokal 1, Maruan Hijazi 1, #, Nosheen Akhta
 The copyright holder for these data is the author. This resource is made available under a Creative Commons Attribution-NonCommercial-NoDerivatives CC-BY-NC-ND 4.0 International license.
 
 ## How to install
-### for private use
-download the DRUMLR_0.1.0.tar.gz file and run the following code, replacing path with your local path to the downloaded DRUMLR_0.1.0.tar.gz (usually "C:/Users/Username/Downloads/DRUMLRv01_0.1.0.tar.gz")
 
-install.packages(path, 
-                 repos = NULL, 
-                 type ="source")
-
-### when the package is public
 To install the package install the devtools package and run:
-devtools::install_github(CutillasLab/DRUMLR)
+devtools::install_github(repo="CutillasLab/DRUMLR", subdir="DRUMLR_code")
 
 ## Code dependencies 
 dplyr (1.0.2)\
