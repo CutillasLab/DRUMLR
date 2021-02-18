@@ -20,8 +20,8 @@
 #' @param save_csv if TRUE csv files containing DRUML results will be made
 #' @param computational_load Set as a decimal fraction of the number of cores you which to be recruited for model building e.g a value of 0.8 means 80\% of all available CPU cores will be used to build models. If left as NULL only 1 core will be used.
 #' @param method Statistical method for filtering distance markers for DRUML models default is spearman
-#' @param top_pos_n maximum ammount of sensitive distance markers for DRUML models
-#' @param top_neg_n  maximum ammount of resistant distance markers for DRUML models
+#' @param max_n_D maximum number of markers to use
+#' @param min_n_D Minimum number of  markers to use
 #' @param order_var variable used to filter Distance models for DRUML:
 #'  \itemize{
 #'   \item p = p value
@@ -45,8 +45,8 @@ BuildDRUMLs <- function(df_input,
                         partition.ratio = 0.7,
                         models = c("glm", "cubist", "pls", "pcr", "nnet", "svm", "rf", "dl"),
                         corr_method = "spearman",
-                        top_pos_n = 10,
-                        top_neg_n = 10 ,
+                        max_n_D = 30,
+                        min_n_D = 7 ,
                         order_var = "r") {
   if ("dplyr" %in% (.packages()) == FALSE) {
     library(dplyr)
@@ -94,7 +94,6 @@ BuildDRUMLs <- function(df_input,
   #Get list of cell lines by removing repeatnumber
   cell_lines <- DRUMLR::RemoveRepeatNo(rownames(df_distance))
 
-
   #.BuildallDRUML is an internal function for building ML models for each drug
   .BuildallDRUML <- function(.drug) {
     #add response data and remove na results
@@ -109,8 +108,8 @@ BuildDRUMLs <- function(df_input,
     op_markers <- DRUMLR::OptimiseMLInput(
       df_train = df_input,
       method = corr_method,
-      top_pos_n = top_pos_n,
-      top_neg_n = top_neg_n,
+      max_n_D = max_n_D,
+      min_n_D = min_n_D,
       partition.ratio = partition.ratio,
       return_corr_analysis = F,
       order_var = order_var
@@ -194,7 +193,7 @@ BuildDRUMLs <- function(df_input,
   }
 
   print("Building models")
-
+  #drugs <- drugs[1:5]
   if (is.null(computational_load)) {
     DRUML_output <-
       foreach::foreach(
@@ -225,6 +224,7 @@ BuildDRUMLs <- function(df_input,
         .combine = "c",
         .packages = c(
           "dplyr",
+          "arm",
           "h2o",
           "caret",
           "Cubist",

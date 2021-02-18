@@ -3,16 +3,16 @@
 #' @name OptimiseMLInput
 #' @param df_train training dataset for machine learning. df_input with response variables in a column named response
 #' @param method statistical method used to determine correlation
-#' @param top_pos_n number of positive markers to use
-#' @param top_res_n number of negative markers to use
+#' @param max_n_D maximum number of markers to use
+#' @param min_n_D Minimum number of  markers to use
 #' @param return_corr_analysis TRUE results of correlation analysis will be returned in addition to markers lists
 #' @param order_var variable used to order which markers to use
 #' @export OptimiseMLInput
 
 OptimiseMLInput <- function(df_train,
                             method = "spearman",
-                            top_pos_n = 30,
-                            top_neg_n = 30,
+                            max_n_D = 30,
+                            min_n_D = 7,
                             partition.ratio = 0.7,
                             return_corr_analysis = FALSE,
                             order_var = "r") {
@@ -66,6 +66,26 @@ OptimiseMLInput <- function(df_train,
   r_positive <- df_corr[order(-df_corr[, order_var]), ]
   r_negative <- df_corr[order(df_corr[, order_var]), ]
 
+  top_r_positive <- r_positive[r_negative$p <= 0.05 & r_negative[, order_var]>0, ]
+  top_r_negative <- r_negative[r_negative$p <= 0.05 & r_negative[, order_var]<0, ]
+
+  #function to determine how many markers to use
+  .n_check <- function(x){
+    x <- nrow(x)
+    if(x>max_n_D){
+      out <- max_n_D
+    }else if(x<min_n_D){
+      out <- min_n_D
+    }else{
+        out <- x
+      }
+  }
+
+  #get n values for each marker
+  top_pos_n <- .n_check(top_r_positive)
+  top_neg_n <- .n_check(top_r_negative)
+
+  #Get D values for ML learning
   top_r_positive <-  r_positive[1:top_pos_n, "marker"] %>% paste()
   top_r_negative <- r_negative[1:top_neg_n, "marker"] %>% paste()
 

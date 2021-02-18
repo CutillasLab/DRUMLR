@@ -17,8 +17,8 @@ BuildDRUMLs(
   partition.ratio = 0.7,
   models = c("glm", "cubist", "pls", "pcr", "nnet", "svm", "rf", "dl"),
   corr_method = "spearman",
-  top_pos_n = 10,
-  top_neg_n = 10,
+  max_n_D = 30,
+  min_n_D = 7,
   order_var = "r"
 )
 }
@@ -49,9 +49,9 @@ BuildDRUMLs(
   \item dl = Deep learning model using h2o package (needs Java to be up to date)
   }}
 
-\item{top_pos_n}{maximum ammount of sensitive distance markers for DRUML models}
+\item{max_n_D}{maximum number of markers to use}
 
-\item{top_neg_n}{maximum ammount of resistant distance markers for DRUML models}
+\item{min_n_D}{Minimum number of  markers to use}
 
 \item{order_var}{variable used to filter Distance models for DRUML:
 \itemize{

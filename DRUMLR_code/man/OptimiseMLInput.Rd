@@ -7,8 +7,8 @@
 OptimiseMLInput(
   df_train,
   method = "spearman",
-  top_pos_n = 30,
-  top_neg_n = 30,
+  max_n_D = 30,
+  min_n_D = 7,
   partition.ratio = 0.7,
   return_corr_analysis = FALSE,
   order_var = "r"
@@ -19,13 +19,13 @@ OptimiseMLInput(
 
 \item{method}{statistical method used to determine correlation}
 
-\item{top_pos_n}{number of positive markers to use}
+\item{max_n_D}{maximum number of markers to use}
+
+\item{min_n_D}{Minimum number of  markers to use}
 
 \item{return_corr_analysis}{TRUE results of correlation analysis will be returned in addition to markers lists}
 
 \item{order_var}{variable used to order which markers to use}
-
-\item{top_res_n}{number of negative markers to use}
 }
 \description{
 Title

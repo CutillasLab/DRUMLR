@@ -14,8 +14,11 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: FALSE
 Imports: 
+  arm,
+  backports,
   dplyr,
   foreach,
+  htmltools,
   doParallel,
   limma, 
   caret,

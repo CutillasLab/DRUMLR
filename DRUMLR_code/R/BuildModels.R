@@ -20,6 +20,9 @@
                         save_path,
                         metric = "RMSE",
                         initiate_h2o = T) {
+  require(arm)
+  require(checkmate)
+  require(backports)
   #set seed
   set.seed(123)
 
