@@ -19,7 +19,7 @@ PredictDRUML_example <- function(df_distance,
                          models= "all",
                          models_dir,
                          shut_h2o =F,
-                         computational_load = NULL){
+                         computational_load = NULL){w
 
   if("tidyverse" %in% (.packages())==FALSE){library(dplyr)}
   if("caret" %in% (.packages())==FALSE){library(caret)}
