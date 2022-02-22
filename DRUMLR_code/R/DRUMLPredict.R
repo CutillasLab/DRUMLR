@@ -12,7 +12,8 @@ PredictDRUML <- function(df_distance,
                          drugs="all",
                          models= "all",
                          models_dir,
-                         path_file = NULL){
+                         path_file = NULL,
+                         shut_h2o = F){
 
   if("tidyverse" %in% (.packages())==FALSE){library(dplyr)}
   if("caret" %in% (.packages())==FALSE){library(caret)}
