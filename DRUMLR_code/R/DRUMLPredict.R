@@ -2,9 +2,10 @@
 #' @name  PredictDRUML
 #' @export PredictDRUML
 #' @param df_distance dataframe of caluclated D values of input data made using DRUMLR::DrugMarkerEnrichment()
-#' @param drugs Drug for which predictions will be made
-#' @param models list of models for which you would like to use for predictions
-#' @param path_file path file containing model information. If none is specified the default path file save location will be used.
+#' @param drugs Drugs for which predictions will be made.If "all" is stated all drugs will be used
+#' @param models list of models for which you would like to use for predictions if "all" is stated all models will be used. Model choices are "bayes", "cubist", "nnet", "pcr", "pls", "rf", "svm" and "dl".
+#' @param path_file path file containing model information. If none is specified the default path file save location will be used
+#' @param shut_h2o if TRUE the Instance of H20 will be shut down after DL model predictions
 #' @title  Make a heatmap of marker enrichment
 #' @usage PredictDRUML(df_distance = validation_data, drugs = c("BYL.719", "ABT.119"), models= c("rf", "dl"), models_dir = "~/Downloads/Models", path_file = df_path)
 

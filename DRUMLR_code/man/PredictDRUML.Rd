@@ -9,11 +9,13 @@ PredictDRUML(df_distance = validation_data, drugs = c("BYL.719", "ABT.119"), mod
 \arguments{
 \item{df_distance}{dataframe of caluclated D values of input data made using DRUMLR::DrugMarkerEnrichment()}
 
-\item{drugs}{Drug for which predictions will be made}
+\item{drugs}{Drugs for which predictions will be made.If "all" is stated all drugs will be used}
 
-\item{models}{list of models for which you would like to use for predictions}
+\item{models}{list of models for which you would like to use for predictions if "all" is stated all models will be used. Model choices are "bayes", "cubist", "nnet", "pcr", "pls", "rf", "svm" and "dl".}
 
-\item{path_file}{path file containing model information. If none is specified the default path file save location will be used.}
+\item{path_file}{path file containing model information. If none is specified the default path file save location will be used}
+
+\item{shut_h2o}{if TRUE the Instance of H20 will be shut down after DL model predictions}
 }
 \description{
 Make a heatmap of marker enrichment
