@@ -84,7 +84,7 @@ PredictDRUML_example <- function(df_distance,
   predictions_all <- foreach(i = models_all$local_path, .combine = "cbind")%dopar%{
     #get model info and filter and scale df
     mod_imp <- models_all[models_all$local_path == i, "input_id"]
-    df_mod <- DRUMLRdata::MinMaxNormalise(df_distance[,dist_list[[mod_imp]]],.margin=1)
+    df_mod <- DRUMLR::MinMaxNormalise(df_distance[,dist_list[[mod_imp]]],.margin=1)
 
     model <- readRDS(paste(models_dir, i, sep = ""))
     predicted_vals <- predict(model, df_mod)%>% data.frame()
@@ -103,7 +103,7 @@ PredictDRUML_example <- function(df_distance,
     predictions_dl <- foreach(i = models_dl$local_path, .combine = "cbind")%do%{
       #get model info and filter and scale df
       mod_imp <- models_dl[models_dl$local_path == i, "input_id"]
-      df_mod <- DRUMLRdata::MinMaxNormalise(df_distance[,dist_list[[mod_imp]]],.margin=1) %>% as.h2o()
+      df_mod <- DRUMLR::MinMaxNormalise(df_distance[,dist_list[[mod_imp]]],.margin=1) %>% as.h2o()
 
       model <- h2o::h2o.import_mojo(paste(models_dir, i, sep = ""))
       predicted_vals <- h2o::h2o.predict(model, df_mod) %>% as.data.frame()
