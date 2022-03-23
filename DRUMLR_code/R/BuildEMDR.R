@@ -61,7 +61,7 @@ BuildEMDR <- function(df_input = NULL,
 
     #label resistant and sensitive lines
     sensitivity <-
-      c(2, 1)[as.factor(unclass(colnames(dfall) %in% colnames(df_sens)))]
+      c(1, 2)[as.factor(unclass(colnames(dfall) %in% colnames(df_sens)))]
 
     #carry out limma analysis
     design <-
@@ -293,7 +293,7 @@ BuildEMDR <- function(df_input = NULL,
                          ################################################################################
 
                          #alter resistant fold values so they increase with significance
-                         res_m <- df_limma[df_limma$ratio <0,] * -(1)
+                         res_m <- df_limma[df_limma$ratio <0,]* -(1)
                          sens_m <- df_limma[df_limma$ratio >0,]
 
                          #check to see if there are enough significant markers to continue analysis
